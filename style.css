@@ -402,3 +402,119 @@ header {
 .next-btn svg {
     display: block;
 }
+/* ===== Em breve ===== */
+.em-breve {
+  position: relative;
+  width: 90%;
+  min-height: 60vh;
+  padding: 40px 5% 70px;
+  color: #fff;
+  background-color: #011020;
+  background-image: var(--em-breve-bg);
+  background-size: cover;
+  background-position: var(--bg-pos, center center);
+}
+
+.em-breve::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(1,16,32,0.85) 0%,
+    rgba(1,16,32,0.65) 20%,
+    rgba(1,16,32,0.25) 30%,
+    rgba(1,16,32,0) 100%
+  );
+}
+
+.em-breve-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.em-breve-text {
+  flex: 0 0 55%;
+}
+
+.em-breve-heading {
+  font-size: 2.5rem;
+  font-weight: 1000;
+  margin-bottom: 25px;
+}
+
+.em-breve-logo {
+  max-width: 320px;
+  margin-bottom: 18px;
+}
+
+.em-breve-description {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  opacity: 0.95;
+  margin-bottom: 18px;
+}
+
+/* CTA sem linha */
+.em-breve-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.em-breve-cta svg {
+  transition: transform 0.25s ease;
+}
+
+.em-breve-cta:hover svg {
+  transform: translateX(6px);
+}
+
+/* Coluna da direita */
+.em-breve-info {
+  max-width: 30%;
+  padding-left: 50px;
+  margin-right: 30px;
+  border-left: 2px solid rgba(79, 91, 250, 0.541);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 5%;
+  gap: 20px;
+}
+
+.info-block .label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  display: block;
+}
+
+.info-block .value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.info-block.trailer img {
+  margin-top: 6px;
+  max-width: 220px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.info-block.trailer img:hover {
+  transform: scale(1.03);
+}
+.em-breve-info .label {
+  color: rgba(31, 2, 2, 0.562); /* título mais claro */
+  font-size: 0.9rem;
+}
+.em-breve-info .value {
+  color: rgba(25, 87, 201, 0.671); /* valor mais destacado */
+  font-weight: bold;
+}
