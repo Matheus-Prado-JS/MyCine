@@ -14,14 +14,26 @@ document.addEventListener("DOMContentLoaded", () => {
       wrapper.classList.remove("active"); // apenas fecha
     });
   }
-});
-const video = document.getElementById('bg-video');
-const muteBtn = document.getElementById('mute-btn');
 
-muteBtn.addEventListener('click', () => {
-    video.muted = !video.muted; // alterna entre mudo e som
-    muteBtn.textContent = video.muted ? '🔇' : '🔈'; // muda o ícone
+  // 🎬 Controle do vídeo
+  const video = document.getElementById('bg-video');
+  const muteBtn = document.getElementById('mute-btn');
+
+  if (video) {
+    // tenta dar play assim que carregar
+    video.play().catch(err => {
+      console.log("Autoplay bloqueado pelo navegador:", err);
+    });
+
+    // garante que começa mutado
+    video.muted = true;
+    video.volume = 0.2;
+
+    if (muteBtn) {
+      muteBtn.addEventListener('click', () => {
+        video.muted = !video.muted; // alterna entre mudo e som
+        muteBtn.textContent = video.muted ? '🔇' : '🔈'; // muda o ícone
+      });
+    }
+  }
 });
-video.muted = false;
-video.volume = 0.2; // <--- define o volume inicial
-video.play();
