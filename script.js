@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // garante que começa mutado
     video.muted = true;
     video.volume = 0.2;
+    video.addEventListener('canplay', () => {
+    video.play().catch(err => console.log("Autoplay bloqueado:", err));
+});
 
     if (muteBtn) {
       muteBtn.addEventListener('click', () => {
