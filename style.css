@@ -419,13 +419,10 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(1,16,32,0.85) 0%,
-    rgba(1,16,32,0.65) 20%,
-    rgba(1,16,32,0.25) 30%,
-    rgba(1,16,32,0) 100%
-  );
+  background: var(--em-breve-bg) no-repeat center center/cover;
+  z-index: 0;
+  transition: opacity 0.5s ease;
+  opacity: 1;
 }
 
 .em-breve-inner {
@@ -438,6 +435,8 @@ header {
 
 .em-breve-text {
   flex: 0 0 55%;
+  position: relative;
+  top: var(--desc-offset, 0px);
 }
 
 .em-breve-heading {
@@ -456,6 +455,7 @@ header {
   line-height: 1.65;
   opacity: 0.95;
   margin-bottom: 18px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 /* CTA sem linha */
@@ -517,4 +517,56 @@ header {
 .em-breve-info .value {
   color: rgba(25, 87, 201, 0.671); /* valor mais destacado */
   font-weight: bold;
+}
+/* Wandinha */
+.em-breve.wandinha,
+.em-breve.wandinha .em-breve-text,
+.em-breve.wandinha .em-breve-info,
+.em-breve.wandinha .em-breve-cta,
+.em-breve.wandinha .info-block .label {
+  color: #FFD700; /* sua cor escolhida para Wandinha */
+}
+
+.em-breve.wandinha .em-breve-info {
+  border-left-color: #FFD700; /* linha lateral */
+}
+
+/* Quarteto Fantástico */
+.em-breve.quarteto,
+.em-breve.quarteto .em-breve-text,
+.em-breve.quarteto .em-breve-info,
+.em-breve.quarteto .em-breve-cta,
+.em-breve.quarteto .info-block .label {
+  color: #000000; /* sua cor escolhida para Quarteto */
+}
+
+.em-breve.quarteto .em-breve-info {
+  border-left-color: #000000;
+}
+
+/* Jurassic World */
+.em-breve.jurassic,
+.em-breve.jurassic .em-breve-text,
+.em-breve.jurassic .em-breve-info,
+.em-breve.jurassic .em-breve-cta,
+.em-breve.jurassic .info-block .label {
+  color: #00FFAA; /* cor escolhida para Jurassic */
+}
+
+.em-breve.jurassic .em-breve-info {
+  border-left-color: #00FFAA;
+}
+.em-breve {
+  transition: background-image 0.6s ease-in-out; /* suaviza a troca do fundo */
+}
+
+.em-breve-info {
+  transition: color 0.6s ease, border-left-color 0.6s ease; /* suaviza as cores da coluna direita */
+}
+
+.em-breve .em-breve-description,
+.em-breve .em-breve-heading,
+.em-breve .em-breve-logo,
+.em-breve-info .info-block .value {
+  transition: opacity 0.5s ease;
 }
