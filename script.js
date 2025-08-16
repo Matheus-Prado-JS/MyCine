@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       
       bg: "imgs/QuartetoBack.jpg",
-      logo: "imgs/Quarteto-Logo.png",
+      logo: "imgs/quartetologo.png",
       description: "Um grupo de astronautas passa por uma tempestade cósmica durante seu voo experimental. Ao retornar à Terra, os tripulantes descobrem que possuem novas e bizarras habilidades. Ao tentar compreender seus poderes, eles têm que lidar com novas ameaças.",
       link: "https://www.marvel.com/movies/the-fantastic-four-first-steps",
       trailerThumb: "imgs/Quarteto-trailer-thumb.webp",
