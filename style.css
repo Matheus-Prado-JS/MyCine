@@ -570,3 +570,76 @@ header {
 .em-breve-info .info-block .value {
   transition: opacity 0.5s ease;
 }
+.em-breve::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* altura do fade */
+  background: linear-gradient(to bottom, rgba(1,16,32,0), rgba(1,16,32,1));
+}
+.em-breve::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(1,16,32,1), rgba(1,16,32,0));
+  pointer-events: none;
+  z-index: 1; /* acima do background, mas abaixo do conteúdo */
+}
+.continue-assistindo {
+  padding: 50px 5%;
+  background-color: #011020; /* ou um degradê se quiser */
+  color: #fff;
+}
+
+.continue-assistindo h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.video-card {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.video-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(1,16,32,0.9), rgba(1,16,32,0));
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.episode-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
