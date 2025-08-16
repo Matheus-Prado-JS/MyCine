@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "imgs/Wandinha-logo.webp",
       description: "Wandinha retorna à Escola Nunca Mais, onde enfrentará novos inimigos, problemas com seus poderes e um mistério sobrenatural ainda mais intrigante.",
       link: "https://www.netflix.com/title/81231974",
-      trailerThumb: "imgs/Wandinha-trailer-thumb.AVIF",
+      trailerThumb: "imgs/Wandinha-trailer-thumb.jpg",
       trailerLink: "https://youtu.be/watch?v=03u4xyj0TH4",
       release: "06 Agosto 2025",
       director: "Tim Burton",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       
       bg: "imgs/QuartetoBack.jpg",
-      logo: "imgs/Quarteto-logo.webp",
+      logo: "imgs/Quarteto-logo.png",
       description: "Um grupo de astronautas passa por uma tempestade cósmica durante seu voo experimental. Ao retornar à Terra, os tripulantes descobrem que possuem novas e bizarras habilidades. Ao tentar compreender seus poderes, eles têm que lidar com novas ameaças.",
       link: "https://www.marvel.com/movies/the-fantastic-four-first-steps",
       trailerThumb: "imgs/Quarteto-trailer-thumb.webp",
