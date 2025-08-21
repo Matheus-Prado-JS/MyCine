@@ -193,3 +193,17 @@ section.style.setProperty('--desc-offset', '62px'); // teste com diferentes valo
     showSlide(current);
   }, 6000);
 });
+// Explore Panel
+const exploreBtn = document.getElementById("explore-btn");
+const explorePanel = document.getElementById("explore-panel");
+const closeExplore = document.getElementById("close-explore");
+
+if (exploreBtn && explorePanel && closeExplore) {
+  exploreBtn.addEventListener("click", () => {
+    explorePanel.style.display = "flex";
+  });
+
+  closeExplore.addEventListener("click", () => {
+    explorePanel.style.display = "none";
+  });
+}
