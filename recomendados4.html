@@ -91,67 +91,241 @@
 
 <!-- Menu lateral dentro da seção -->
 <aside id="episodes-panel" class="episodes-panel">
-    <div class="episodes-header">
-        <h2>Episódios</h2>
-        <button id="close-episodes" class="close-btn">✕</button>
-    </div>
+  <div class="episodes-header">
+    <h2>Episódios</h2>
+    <button id="close-episodes" class="close-btn">✕</button>
+  </div>
 
-    <div class="episodes-list">
-        <div class="episode-item">
-            <img src="imgs/ComandoEp1.webp" alt="Episódio 1">
-            <div class="episode-info">
-                <h3>01 - Embrulho No Estômago</h3>
-                <p>Amanda Waller reúne os Creature Commandos - liderados pelo General Rick Flag Sr.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp2.jpg" alt="Episódio 2">
-            <div class="episode-info">
-                <h3>02 - O Colar de Turmalina</h3>
-                <p>Enquanto Ilana continua sua busca por Flag, A Noiva mostra onde foi criada.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp3.webp" alt="Episódio 3">
-            <div class="episode-info">
-                <h3>03 - Viva o Homem de Lata</h3>
-                <p>GI Robot revive seus dias de glória e finalmente realiza seu sonho.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp4.jpg" alt="Episódio 4">
-            <div class="episode-info">
-                <h3>04 - Caçando Esquilos</h3>
-                <p>O Comando das Criaturas retorna para casa para entender a motivação da Circe, já Weasel.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp5.jpg" alt="Episódio 5">
-            <div class="episode-info">
-                <h3>05 - A Panela de Ferro</h3>
-                <p>Flag e Frankenstein se unem para refutar as visões de Circe sobre a Princesa.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp6.jpg" alt="Episódio 6">
-            <div class="episode-info">
-                <h3>06 - Priyatel Skelet</h3>
-                <p>Dr.Fósforo surge com a sua própria pesquisa; O Comando enfrenta um perigo iminente.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp7.jpg" alt="Episódio 7">
-            <div class="episode-info">
-                <h3>07 - Um Monstrinho muito Engraçado</h3>
-                <p>A Princesa tenta escapar da morte pelas mãos dos Comandos Criaturas, de uma vez por todas.</p>
-            </div>
-        </div>
+  <!-- Seletor de temporada -->
+  <div class="season-selector">
+    <h3>Temporada</h3>
+    <div class="season-buttons">
+      <button class="season-btn active" data-season="1">1</button>
+      <button class="season-btn" data-season="2">2</button>
+      <button class="season-btn" data-season="3">3</button>
     </div>
+    <h3>Episódios</h3>
+  </div>
+
+  <!-- Temporada 1 -->
+  <div class="episodes-list season season-1 active">
+    <div class="episode-item">
+      <img src="imgs/YellowS1E1.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>01 - Piloto</h3>
+        <p>As Yellowjackets rivais se divertem juntas na noite anterior à uma tragédia.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E2.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>02 - Fá sustenido</h3>
+        <p>Misty encontra um propósito na floresta. No presente, Shauna se envolve em um acidente com um desconhecido.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E3.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>03 - A casa de bonecas</h3>
+        <p>Abaladas, as sobreviventes fazem um funeral para as vítimas do acidente.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E4.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>04 - Aguentem firme</h3>
+        <p>As Yellowjackets sobreviventes precisam escolher uma caçadora, mas quem tem a melhor mira?</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E5.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>05 - Colmeia de sangue</h3>
+        <p>As garotas fazem uma sessão espírita para melhorar o ânimo.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E6.avif" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>06 - Santas</h3>
+        <p>Na floresta, um romance floresce entre os sobreviventes.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E7.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>07 - Sem bússola</h3>
+        <p>Taissa lidera uma expedição em busca da civilização ou, pelo menos, de comida.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E8.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>08 - O voo da abelha</h3>
+        <p>As garotas têm uma surpresa desagradável, e Laura Lee toma uma atitude desesperada.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E9.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>09 - O baile do fim</h3>
+        <p>As garotas organizam um baile do fim. Lottie abre a grande noite de festa com um discurso.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS1E10.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>10 - Sic transit gloria mundi</h3>
+        <p>Jackie confronta Shauna sobre uma traição dolorosa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Temporada 2 -->
+  <div class="episodes-list season season-2">
+    <div class="episode-item">
+      <img src="imgs/YellowS2E1.avif" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>01 - Amigos, Romanos, Camponeses</h3>
+        <p>Com dois meses de inverno os sobreviventes lidam com a falta de comida.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E2.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>02 - Complexo comestível</h3>
+        <p>Romper uma amizade com a pessoa que fica perseguindo você nem sempre é fácil.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E3.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>03 - Digestivo</h3>
+        <p>As meninas passam por uma ressaca incomum - e um chá de bebê incomparável.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E4.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>04 - Feridas antigas</h3>
+        <p>Reviva sua juventude pegando a estrada - e tenha uma boa lista de músicas.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E5.avif" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>05 - Duas verdades e uma mentira</h3>
+        <p>Acordem sorrindo e não esqueçam as suas botas porque está frio demais lá fora.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E6.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>06 - Qui</h3>
+        <p>As Yellowjackets revisitam os destaques e traumas da "Aula de Saúde".</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E7.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>07 - Enterro</h3>
+        <p>A melhor terapia é meter o som no talo, então hoje iremos reviver um clímax.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E8.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>08 - Escolha</h3>
+        <p>As campeãs estaduais de futebol feminino de 1996 começam o treinamento mais cedo com uma sessão de cardio improvisada.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS2E9.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>09 - Contação de histórias</h3>
+        <p>"Pesada é a cabeça que usa a coroa de chifre".</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Temporada 3 -->
+  <div class="episodes-list season season-3">
+    <div class="episode-item">
+      <img src="imgs/YellowS3E1.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>01 - Celebridade</h3>
+        <p>O verão inspira as Yellowjackets a trocarem o futebol por um esporte de contato mais intenso.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E2.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>02 - Deslocamento</h3>
+        <p>As Yellowjackets estão presas na dúvida entre procurar uma colega irritante, ou curtirem uma viajem de cogumelos.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E3.avif" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>03 - São os Freios</h3>
+        <p>A volta de uma Yellowjacket desperta a vingança no time.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E4.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>04 - 12 Garotas Furiosas e 1 Travis Bêbado</h3>
+        <p>As Yellowjackets tentam transformar suas suspeitas em provas.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E5.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>05 - A Tai fez isso?</h3>
+        <p>As Yellowjackets confrontam a realidade de ter que se livrar de um problema.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E6.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>06 - Ação de Graças(Canadá)</h3>
+        <p>As Yellowjackets começam a se voltar umas contra as outras mais rápido do que um especial de reality show.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E7.jpg" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>07 - Coachar</h3>
+        <p>As Yellowjackets percebem que suas escolhas se transformam numa catástrofe.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E8.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>08 - Uma vida normal e chata</h3>
+        <p>Com uma possível fuga de seu pesadelo, as Yellowjackets descobrem que nem todos estão com pressa de ir embora.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E9.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>09 - Como a história termina</h3>
+        <p>Seguindo as dicas de Stravinsky, os ritos de primavera das Yellowjackets finalmente chegam ao fim.</p>
+      </div>
+    </div>
+    <div class="episode-item">
+      <img src="imgs/YellowS3E10.webp" alt="Episódio 1">
+      <div class="episode-info">
+        <h3>10 - Círculo completo</h3>
+        <p>As coisas ficam frias enquanto novas alianças sangrentas são construídas e desfeitas.</p>
+      </div>
+    </div>
+  </div>
 </aside>
+
 </div>
 
 </section>
-    </section>
     <section class="em-breve" style="--em-breve-bg: url('imgs/SupermanBack.jpg'); --bg-pos: center 40%;">
   <div class="em-breve-inner">
     <!-- Coluna da esquerda -->

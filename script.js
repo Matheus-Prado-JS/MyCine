@@ -194,16 +194,35 @@ section.style.setProperty('--desc-offset', '62px'); // teste com diferentes valo
   }, 6000);
 });
 // Explore Panel
-const exploreBtn = document.getElementById("explore-btn");
-const explorePanel = document.getElementById("explore-panel");
-const closeExplore = document.getElementById("close-explore");
+const exploreBtn = document.getElementById('explore-btn');
+const explorePanel = document.getElementById('explore-panel');
+const closeExplore = document.getElementById('close-explore');
 
-if (exploreBtn && explorePanel && closeExplore) {
-  exploreBtn.addEventListener("click", () => {
-    explorePanel.style.display = "flex";
-  });
-
-  closeExplore.addEventListener("click", () => {
-    explorePanel.style.display = "none";
+if (exploreBtn && explorePanel) {
+  exploreBtn.addEventListener('click', () => {
+    explorePanel.classList.toggle('show');
   });
 }
+
+if (closeExplore && explorePanel) {
+  closeExplore.addEventListener('click', () => {
+    explorePanel.classList.remove('show');
+  });
+}
+// Troca de temporadas
+const seasonButtons = document.querySelectorAll(".season-btn");
+const seasons = document.querySelectorAll(".season");
+
+seasonButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    // tirar ativo das bolinhas
+    seasonButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // mostrar temporada correta
+    const season = btn.getAttribute("data-season");
+    seasons.forEach(s => s.classList.remove("active"));
+    document.querySelector(`.season-${season}`).classList.add("active");
+  });
+});
+
