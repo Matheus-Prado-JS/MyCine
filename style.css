@@ -606,6 +606,19 @@ header {
   font-size: 2rem;
   margin-bottom: 25px;
 }
+.destaques {
+  position: relative;
+  overflow: visible;
+  z-index: 0;
+  padding: 20px 5%;
+  background-color: #011020; /* ou um degradê se quiser */
+  color: #fff;
+}
+
+.destaques h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
 .continue-assistindo::after {
   content: "";
   position: absolute;

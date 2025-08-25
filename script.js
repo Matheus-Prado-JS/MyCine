@@ -225,4 +225,33 @@ seasonButtons.forEach(btn => {
     document.querySelector(`.season-${season}`).classList.add("active");
   });
 });
+// ===== Sports Carousel =====
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".sports-carousel .slide");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((s, i) => {
+      s.classList.toggle("active", i === index);
+    });
+  }
+
+  prevBtn.addEventListener("click", () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  // troca automática a cada 6s
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 6000);
+});
 
