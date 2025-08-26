@@ -1066,3 +1066,457 @@ visibility 0s linear 0.38s; /*atrasa o hidden pra depois do fade-out*/
   transform: scale(1.06);
   box-shadow: 0 8px 20px rgba(80, 2, 2, 0.4);
 }
+/* Section Coleção DC */
+.colecao-dc {
+  position: relative;
+  min-height: 130vh;
+  background: linear-gradient(to bottom, transparent, #2564ac), 
+              url("imgs/DCBack.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.colecao-dc-content {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.colecao-dc-subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #d0e3fc;
+  margin-bottom: 0.5rem;
+}
+
+.colecao-dc-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.colecao-dc-desc {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.colecao-dc-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background: #0077ff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #ffffff;
+  color: #005fcc
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #053b81;
+  color: #ffffff;
+  border: 2px solid #82b5f8;
+}
+
+.colecao-dc-episodios {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.episodio {
+  text-align: center;
+}
+
+.episodio img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.episodio img:hover {
+  transform: scale(1.05);
+}
+
+.episodio p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Section Coleção MARVEL */
+.colecao-marvel {
+  position: relative;
+  min-height: 130vh;
+  background: linear-gradient(to bottom, transparent, #ac252596), 
+              url("imgs/MarvelBack.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.colecao-marvel-content {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.colecao-marvel-subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #d0e3fc;
+  margin-bottom: 0.5rem;
+}
+
+.colecao-marvel-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.colecao-marvel-desc {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.colecao-marvel-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary-marvel {
+  background: #ff0000;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary-marvel:hover {
+  background: #f8f8f8;
+  color: #ff0000cc;
+}
+
+.btn-secondary-marvel {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-secondary-marvel:hover {
+  background: #c00c0c;
+  color: #ffffff;
+  border: 2px solid #ffbebe;
+}
+
+.colecao-marvel-episodios {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.episodio {
+  text-align: center;
+}
+
+.episodio img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.episodio img:hover {
+  transform: scale(1.05);
+}
+
+.episodio p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Section Coleção HARRY POTTER */
+.colecao-harry {
+  position: relative;
+  min-height: 130vh;
+  background: linear-gradient(to bottom, transparent, #7625ac4f), 
+              url("imgs/HarryPotterBack.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.colecao-harry-content {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.colecao-harry-subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #d0e3fc;
+  margin-bottom: 0.5rem;
+}
+
+.colecao-harry-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.colecao-harry-desc {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.colecao-harry-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary-harry {
+  background: #b700ff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary-harry:hover {
+  background: #ffffff;
+  color: #b700ff;
+}
+
+.btn-secondary-harry {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-secondary-harry:hover {
+  background: #c24af1;
+  color: #ffffff;
+  border: 2px solid #b700ff59;
+}
+
+.colecao-harry-episodios {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.episodio {
+  text-align: center;
+}
+
+.episodio img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.episodio img:hover {
+  transform: scale(1.05);
+}
+
+.episodio p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Section Coleção INVOCAÇÃO DO MAL */
+.colecao-invocacao {
+  position: relative;
+  min-height: 130vh;
+  background: linear-gradient(to bottom, transparent, #e0d21167), 
+              url("imgs/ConjuringBack.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.colecao-invocacao-content {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.colecao-invocacao-subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.colecao-invocacao-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.colecao-invocacao-desc {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.colecao-invocacao-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary-invocacao{
+  background: #ffd900;
+  color: #050505;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary-invocacao:hover {
+  background: #000000;
+  color: #ffdb0e;
+}
+
+.btn-secondary-invocacao {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-secondary-invocacao:hover {
+  background: #f7da37;
+  color: #000000;
+  border: 2px solid #ffeb32a9;
+}
+
+.colecao-invocacao-episodios {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.episodio {
+  text-align: center;
+}
+
+.episodio img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.episodio img:hover {
+  transform: scale(1.05);
+}
+
+.episodio p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Section Nossos Universos */
+.nossos-universos {
+  --c1: rgba(75, 0, 15, 0.85);
+  --c2: rgba(0, 26, 77, 0.85);
+
+  background-image: linear-gradient(270deg, var(--c1), var(--c2), var(--c1));
+  background-size: 300% 300%;        /* cria espaço para o movimento */
+  background-position: 0% 0%;
+  animation: gradientShift 50s ease infinite;
+
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+
+.universos-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.universos-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.universo {
+  width: 120px;
+  height: 120px;
+  background: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.universo img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* Mantém proporção da logo */
+  background: #000;    /* Fundo uniforme caso a imagem não seja transparente */
+  padding: 10px;       /* Dá uma folga para logos que ocupam o círculo inteiro */
+  border-radius: 50%;  /* Garante que imagens quadradas sigam o círculo */
+}
+
+
+.universo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
