@@ -1520,3 +1520,95 @@ visibility 0s linear 0.38s; /*atrasa o hidden pra depois do fade-out*/
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
+/* Bloco Explore por gêneros */
+.explore-generos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.generos-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 40px; /* espaço pros botões */
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.generos-grid {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.genero {
+  flex: 0 0 20%; /* 5 cards visíveis por vez */
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.genero span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+/* Efeito hover nos cards de gênero */
+.genero {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genero:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+.genero:hover span {
+  background: rgba(0,0,0,0.7);
+}

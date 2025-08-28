@@ -254,4 +254,35 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(current);
   }, 6000);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.querySelector(".generos-grid");
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const nextBtn = document.querySelector(".carousel-btn.next");
 
+  let currentPage = 0;
+  const itemsPerPage = 5; // quantos cards aparecem por vez
+  const totalItems = document.querySelectorAll(".genero").length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  function showPage(page) {
+    const offset = -page * 100; // move 100% por página
+    grid.style.transform = `translateX(${offset}%)`;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 0) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentPage < totalPages - 1) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  });
+
+  // inicial
+  showPage(currentPage);
+});

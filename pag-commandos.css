@@ -1,0 +1,111 @@
+/* Fundo hero */
+.commando-hero {
+  position: relative;
+  height: 100vh;
+  background: url("imgs/Commando-bg.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  color: white;
+}
+
+.commando-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.2));
+}
+
+/* Conteúdo do lado esquerdo */
+.commando-content {
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+}
+
+.serie-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+.commando-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.commando-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.commando-meta .age {
+  background: #e62020;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Botões */
+.commando-buttons .btn {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.commando-buttons .play {
+  background: #e0e0cc;
+  color: rgb(8, 8, 8);
+}
+.commando-buttons .play:hover {
+  background: #000000;
+  color: #e0e0cc;
+}
+.commando-buttons .list {
+  background: #000000;
+  color: #e0e0cc;
+}
+.commando-buttons .list:hover {
+  background: #e0e0cc;
+  color: #000000;
+}
+/* Episódios no lado direito */
+.commando-episodes {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 320px;
+}
+
+.episode {
+  display: flex;
+  background: rgba(0,0,0,0.6);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.episode img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.episode-info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.episode-info span {
+  font-weight: bold;
+  color: #e0e0cc;
+}

@@ -1,0 +1,111 @@
+/* Fundo hero */
+.fallout-hero {
+  position: relative;
+  height: 100vh;
+  background: url("imgs/fallout-bg.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  color: white;
+}
+
+.fallout-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.2));
+}
+
+/* Conteúdo do lado esquerdo */
+.fallout-content {
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+}
+
+.serie-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+.fallout-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.fallout-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.fallout-meta .age {
+  background: #000000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Botões */
+.fallout-buttons .btn {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.fallout-buttons .play {
+  background: #f3f164;
+  color: rgb(8, 8, 8);
+}
+.fallout-buttons .play:hover {
+  background: #000000;
+  color: #ffdb0e;
+}
+.fallout-buttons .list {
+  background: #000000;
+  color: #f3f164;
+}
+.fallout-buttons .list:hover {
+  background: #ffdb0e;
+  color: #000000;
+}
+/* Episódios no lado direito */
+.fallout-episodes {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 280px;
+}
+
+.episode {
+  display: flex;
+  background: rgba(0,0,0,0.6);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.episode img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.episode-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.episode-info span {
+  font-weight: bold;
+  color: #f3f164;
+}
