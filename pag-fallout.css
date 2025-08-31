@@ -8,12 +8,14 @@
   justify-content: space-between;
   padding: 0 5%;
   color: white;
+  gap: 40px;
 }
 
 .fallout-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to right, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.2));
+  z-index: 1;
 }
 
 /* Conteúdo do lado esquerdo */
@@ -75,37 +77,76 @@
   background: #ffdb0e;
   color: #000000;
 }
+
 /* Episódios no lado direito */
 .fallout-episodes {
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 280px;
+  width: 240px;
+  max-height: 500px; /* altura máxima -> scroll depois de 3~4 episódios */
+  overflow-y: auto;
+  padding-right: 8px; /* espaço pro scroll */
+  flex: 0 0 240px;
+
 }
 
-.episode {
-  display: flex;
-  background: rgba(0,0,0,0.6);
-  border-radius: 8px;
+/* Card do episódio */
+.episode-card {
+  position: relative;
+  height: 160px;
+  flex: 0 0 220px;
+  width: 220px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0f0f0f;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.episode img {
-  width: 100px;
-  object-fit: cover;
+.episode-card:hover {
+  transform: scale(1.03);
 }
 
-.episode-info {
-  padding: 10px;
+/* Overlay com título e tempo */
+.episode-card .overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  color: #fff;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.episode-info span {
-  font-weight: bold;
-  color: #f3f164;
+.episode-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.episode-card .duration {
+  font-size: 14px;
+  opacity: 0.85;
+}
+/* Scrollbar customizada só na lista de episódios */
+.fallout-episodes::-webkit-scrollbar {
+  width: 10px; /* largura da barra */
+}
+
+.fallout-episodes::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.082); /* fundo do trilho */
+  border-radius: 10px;
+}
+
+.fallout-episodes::-webkit-scrollbar-thumb {
+  background: #f3f164; /* cor principal já usada nos botões */
+  border-radius: 10px;
+  border: 2px solid #383838; /* borda para dar contraste */
+}
+
+.fallout-episodes::-webkit-scrollbar-thumb:hover {
+  background: #ffdb0e; /* tom mais forte no hover */
 }
