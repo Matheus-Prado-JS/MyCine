@@ -1,8 +1,8 @@
 /* Fundo hero */
-.alienE-hero {
+.premonicao6-hero {
   position: relative;
   height: 100vh;
-  background: url("imgs/alienearth-bg.avif") no-repeat center center/cover;
+  background: url("imgs/Premonição-bg.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +11,7 @@
   gap: 40px;
 }
 
-.alienE-overlay {
+.premonicao6-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to right, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.2));
@@ -19,40 +19,40 @@
 }
 
 /* Conteúdo do lado esquerdo */
-.alienE-content {
+.premonicao6-content {
   position: relative;
   z-index: 2;
   max-width: 40%;
 }
 
-.serie-label {
+.filme-label {
   font-size: 0.9rem;
   letter-spacing: 2px;
   color: #ccc;
 }
 
-.alienE-title {
+.premonicao6-title {
   font-size: 4rem;
   font-weight: bold;
   margin: 10px 0;
 }
 
-.alienE-meta {
+.premonicao6-meta {
   display: flex;
   gap: 15px;
   font-size: 0.95rem;
   margin-bottom: 20px;
 }
 
-.alienE-meta .age {
-  background: #090175;
+.premonicao6-meta .age {
+  background: #970404;
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: bold;
 }
 
 /* Botões */
-.alienE-buttons .btn {
+.premonicao6-buttons .btn {
   padding: 12px 24px;
   margin-right: 10px;
   border: none;
@@ -61,25 +61,25 @@
   cursor: pointer;
 }
 
-.alienE-buttons .play {
-  background: #1256d4;
+.premonicao6-buttons .play {
+  background: #f10707;
   color: rgb(255, 255, 255);
 }
-.alienE-buttons .play:hover {
+.premonicao6-buttons .play:hover {
   background: #ffffff;
-  color: #1256d4;
+  color: #f10707;
 }
-.alienE-buttons .list {
-  background: #f8f8f8;
-  color: #326cd6;
-}
-.alienE-buttons .list:hover {
-  background: #326cd6;
+.premonicao6-buttons .list {
+  background: #660000;
   color: #ffffff;
+}
+.premonicao6-buttons .list:hover {
+  background: #ffffff;
+  color: #660000;
 }
 
 /* Episódios no lado direito */
-.alienE-episodes {
+.premonicao6-episodes {
   position: relative;
   z-index: 2;
   width: 240px;
@@ -132,21 +132,21 @@
   opacity: 0.85;
 }
 /* Scrollbar customizada só na lista de episódios */
-.alienE-episodes::-webkit-scrollbar {
+.premonicao6-episodes::-webkit-scrollbar {
   width: 10px; /* largura da barra */
 }
 
-.alienE-episodes::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.082); /* fundo do trilho */
+.premonicao6-episodes::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.082); /* fundo do trilho */
   border-radius: 10px;
 }
 
-.alienE-episodes::-webkit-scrollbar-thumb {
-  background: #358aebde; /* cor principal já usada nos botões */
+.premonicao6-episodes::-webkit-scrollbar-thumb {
+  background: #f34c4c; /* cor principal já usada nos botões */
   border-radius: 10px;
-  border: 2px solid #2e3e46; /* borda para dar contraste */
+  border: 2px solid #c02a2a; /* borda para dar contraste */
 }
 
-.alienE-episodes::-webkit-scrollbar-thumb:hover {
-  background: #1246d4; /* tom mais forte no hover */
+.premonicao6-episodes::-webkit-scrollbar-thumb:hover {
+  background: #ff0000; /* tom mais forte no hover */
 }

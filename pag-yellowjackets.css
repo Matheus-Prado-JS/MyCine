@@ -1,0 +1,216 @@
+/* Fundo hero */
+.yellow-hero {
+  position: relative;
+  height: 100vh;
+  background: url("imgs/yellowjackets-bg.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  color: white;
+  gap: 40px;
+}
+
+.yellow-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.85) 30%, rgba(0,0,0,0.3));
+  z-index: 1;
+}
+
+/* Conteúdo do lado esquerdo */
+.yellow-content {
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+}
+
+.serie-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+.yellow-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.yellow-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.yellow-meta .age {
+  background: #000000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Botões */
+.yellow-buttons .btn {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.yellow-buttons .play {
+  background: #ffdb0e;
+  color: rgb(8, 8, 8);
+}
+.yellow-buttons .play:hover {
+  background: #000000;
+  color: #ffdb0e;
+}
+.yellow-buttons .list {
+  background: #000000;
+  color: #f3f164;
+}
+.yellow-buttons .list:hover {
+  background: #f8dc3c;
+  color: #000000;
+}
+
+/* Lista de episódios */
+.yellow-episodes {
+  position: relative;
+  z-index: 2;
+  width: 240px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 8px;
+  flex: 0 0 240px;
+}
+
+/* Seletor de temporada */
+.season-selector {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f3f164;
+}
+
+.season-selector label {
+  background: #000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #f3f164;
+  letter-spacing: 1px;
+}
+
+.season-selector select {
+  appearance: none;
+  background: #000;
+  color: #f3f164;
+  border: 2px solid #f3f164;
+  padding: 10px 40px 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover e foco */
+.season-selector select:hover,
+.season-selector select:focus {
+  background: #f3f164;
+  color: #000;
+  border-color: #ffdb0e;
+}
+
+/* Adiciona uma setinha personalizada */
+.season-selector {
+  position: relative;
+}
+.season-selector::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  font-size: 0.8rem;
+  color: #f3f164;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+.season-selector select:hover + ::after,
+.season-selector select:focus + ::after {
+  color: #000;
+}
+
+/* Containers de episódios */
+.episodes-container {
+  display: none;
+}
+.episodes-container.active {
+  display: block;
+}
+
+/* Card do episódio */
+.episode-card {
+  position: relative;
+  height: 160px;
+  flex: 0 0 220px;
+  width: 220px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.episode-card:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay com título e tempo */
+.episode-card .overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.episode-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.episode-card .duration {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Scrollbar customizada */
+.yellow-episodes::-webkit-scrollbar {
+  width: 10px;
+}
+.yellow-episodes::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.yellow-episodes::-webkit-scrollbar-thumb {
+  background: #f3f164;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+.yellow-episodes::-webkit-scrollbar-thumb:hover {
+  background: #ffdb0e;
+}

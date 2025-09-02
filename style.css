@@ -723,7 +723,7 @@ header {
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -748,14 +748,14 @@ header {
   font-size: 0.9rem;
   opacity: 0.7;
   margin-bottom: 4px;
-  color: #6ccffda6;
+  color: #9b80ffbd;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .universo-info p {
   font-size: 1.1rem;
   margin: 0;
-  color: #3e7ff8;
+  color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0,0,0,1.0);
 }
 .universo-starwars::before {
