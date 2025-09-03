@@ -96,7 +96,7 @@ header {
 .menu-principal-recomendados {
     position: relative;
     width: 100%;
-    height: 600px; /* altura inicial, podemos ajustar */
+    height: 705px; /* altura inicial, podemos ajustar */
     overflow: hidden;
 }
 

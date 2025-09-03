@@ -1,0 +1,349 @@
+/* ===== Fundo animado p/ a página ===== */
+body {
+  margin: 0;
+  --c1: rgba(75, 0, 15, 0.85);
+  --c2: rgba(0, 26, 77, 0.85);
+  background-image: linear-gradient(270deg, var(--c1), var(--c2), var(--c1));
+  background-size: 300% 300%;
+  animation: gradientShift 50s ease infinite;
+  color: #fff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* ===== HERO (altura controlada, não gigante) ===== */
+.menu-principal-recomendados {
+  position: relative;
+  height: 65vh;   /* controla o tamanho */
+  min-height: 705px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 5rem 5% 3rem;            /* espaço pro header + respiro */
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Vídeo de fundo */
+#bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Escurece o vídeo e puxa foco pro conteúdo */
+.menu-principal-recomendados::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(1200px 600px at 20% 50%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.85) 100%);
+  z-index: -1;
+}
+
+.menu-principal-recomendados .content {
+  max-width: min(640px, 45%);
+}
+
+.title-logo {
+  width: clamp(220px, 32vw, 360px);
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.6));
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.55;
+  opacity: .95;
+  margin-bottom: 14px;
+}
+
+.extra-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.rating {
+  background: #000;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+.rating16 { color: #f3f164; }
+.rating18 { color: #ff6666; }
+.rating12 { color: #6ee7b7; }
+
+.seasons { opacity: .9; }
+
+/* Logo do serviço */
+.hbo-logo {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  max-height: 42px;
+  opacity: .95;
+}
+
+/* Data e botão assistir */
+.release-date {
+  position: absolute;
+  bottom: 18px;
+  right: 24px;
+  text-align: center;
+}
+.release-date .day {
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+}
+.release-date .month-year {
+  font-size: .9rem;
+  opacity: .85;
+}
+.play-button {
+  margin-top: 8px;
+  background: #f3f164;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+.play-text {
+  display: block;
+  margin-top: 6px;
+  font-size: .85rem;
+  opacity: .95;
+}
+
+/* Botão mute */
+.mute-button {
+  position: absolute;
+  bottom: 18px;
+  right: 24px;
+  background: rgba(51, 51, 51, 0.55);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* Navegação do hero (não troca de página) */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  padding: 12px;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+.nav-btn:hover { background: rgba(0,0,0,0.65); transform: translateY(-50%) scale(1.05); }
+.prev-btn { left: 16px; }
+.next-btn { right: 16px; }
+
+/* ===== SÉRIES PARA VOCÊ ===== */
+.series-para-voce {
+  padding: 20px 5%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.series-para-voce h2 {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  margin-bottom: 18px;
+  color: #f3f164;
+  letter-spacing: .5px;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+.serie-card {
+  height: 300px;
+  background-size:cover;
+  background-position: center;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  filter: saturate(.95) contrast(.98);
+  background-color: #000;
+}
+.serie-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 50px rgba(0,0,0,.35);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .menu-principal-recomendados { height: 70vh; min-height: 440px; padding: 4rem 5% 2rem; }
+  .menu-principal-recomendados .content { max-width: 60%; }
+}
+@media (max-width: 600px) {
+  .menu-principal-recomendados { height: 62vh; min-height: 380px; }
+  .menu-principal-recomendados .content { max-width: 100%; }
+}
+/* ===== TOP 5 ===== */
+.top5-series {
+  padding: 40px 5%;
+}
+
+.top5-series h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.top5-series h2 span {
+  color: #f3f164;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.top5-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.top5-item {
+  position: relative;
+  width: 180px;
+}
+
+.top5-item .rank {
+  position: absolute;
+  bottom: -20px;   /* desce um pouco */
+  left: -50px;     /* vai para esquerda */
+  font-size: clamp(5rem, 8vw, 7rem);
+  font-weight: 900;
+  color: rgba(255, 196, 0, 0.08); /* quase transparente */
+  z-index: 0;
+  pointer-events: none;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+}
+
+.top5-card {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+  transition: transform .3s ease, box-shadow .3s ease;
+  z-index: 1; /* card vem por cima do número */
+}
+
+.top5-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 18px 50px rgba(0,0,0,.5);
+}
+/* ===== FILTROS ===== */
+.filtros-series {
+  padding: 40px 5%;
+}
+
+.filtro-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.filtro-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filtro-btn:hover {
+  border-color: #f3f164;
+  color: #f3f164;
+}
+
+.filtro-btn.active {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid #f3f164;
+  color: #f3f164;
+  font-weight: 600;
+}
+
+/* Grid filtrável */
+.filtro-grid {
+  display:flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow-x:auto;
+  padding: 1px 0;
+}
+/* Cards mantêm estilo */
+.filtro-grid .serie-card {
+  flex: 0 0 200px; /* largura fixa para rolagem */
+  height: 280px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.filtro-grid .serie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+}
+/* Container com setas */
+.filtro-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.filtro-grid::-webkit-scrollbar {
+  display: none; /* esconde a barra de scroll */
+}
+/* Setas minimalistas */
+.carousel-arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.carousel-arrow:hover { opacity: 1; }
+.carousel-arrow.left { left: -10px; }
+.carousel-arrow.right { right: -10px; }
