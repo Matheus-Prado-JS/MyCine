@@ -7,151 +7,95 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="main-header">
-        <nav class="nav-container">
-            <div class="nav-left">
-                <div class="logo">MYCINE</div>
-                <ul class="menu">
-                    <li class="active"><a href="index.html">Início</a></li>
-                    <li><a href="pag-series.html">Séries</a></li>
-                    <li><a href="#">Filmes</a></li>
-                    <li><a href="#">Recomendados</a></li>
-                    <li><a href="sports.html">Sports</a></li>
-                    <li><a href="#">Crianças & Família</a></li>
-                </ul>
-            </div>
-            <ul class="nav-right">
-                <li>
-                    <a href="#" class="icon search-icon" title="Buscar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="icon bookmark-icon" title="Favoritos">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="icon profile" title="Perfil">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="menu-principal-recomendados">
+<!-- Header padrão -->
+  <header class="main-header">
+    <nav class="nav-container">
+      <div class="nav-left">
+        <div class="logo">MYCINE</div>
+        <ul class="menu">
+          <li class="active"><a href="index.html">Início</a></li>
+          <li><a href="pag-series.html">Séries</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Recomendados</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="#">Crianças & Família</a></li>
+        </ul>
+      </div>
+      <ul class="nav-right">
+        <li>
+          <a href="#" class="icon search-icon" title="Buscar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon bookmark-icon" title="Favoritos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon profile" title="Perfil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / Carrossel interno -->
+  <section class="menu-principal-recomendados" id="hero">
     <video autoplay muted loop playsinline id="bg-video">
-    <source src="vds/Creature Commandos   Official Trailer   DC.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo.
+      <source id="bg-source" src="vds/Creature Commandos   Official Trailer   DC.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
     </video>
+
     <div class="content">
-      <a href="pag-commandos.html">
-        <img src="imgs/creature-commandos.png" alt="Creature Commandos" class="title-logo">
+      <a id="title-link" href="pag-commandos.html">
+        <img id="title-logo" src="imgs/creature-commandos.png" alt="Série destaque" class="title-logo">
       </a>
-        <p class="description">
-            Criada por James Gunn. Nesta ousada série animada da DC, uma equipe 
-            secreta de monstros encarcerados é o último recurso para missões consideradas 
-            perigosas demais para humanos.
-        </p>
-        <div class="extra-info">
-    <span class="rating rating16">16</span>
-    <span class="seasons">Temporadas 1</span>
-</div>
+      <p id="hero-desc" class="description">
+        Criada por James Gunn. Nesta ousada série animada da DC, uma equipe 
+        secreta de monstros encarcerados é o último recurso para missões consideradas 
+        perigosas demais para humanos.
+      </p>
+      <div class="extra-info">
+        <span id="hero-rating" class="rating rating16">16</span>
+        <span id="hero-season" class="seasons">Temporada 1</span>
+      </div>
     </div>
 
-    <!-- Logo no canto superior direito -->
-    <img src="imgs/HBOMax-logo.gif" alt="HBO Logo" class="hbo-logo">
+    <!-- Logo do serviço -->
+    <img id="service-logo" src="imgs/HBOMax-logo.gif" alt="Logo do serviço" class="hbo-logo">
 
-    <!-- Data no canto inferior direito -->
+    <!-- Data -->
     <div class="release-date">
-    <span class="day">05</span>
-    <span class="month-year">DEZ <br>2024</span>
-    <button class="play-button">
+      <span id="hero-day" class="day">05</span>
+      <span id="hero-monthYear" class="month-year">DEZ <br>2024</span>
+      <button class="play-button" type="button">
         <span class="play-icon">▶</span>
+      </button>
+      <span class="play-text">Assista ao trailer</span>
+    </div>
+
+    <!-- Controles do carrossel -->
+    <button id="prevHero" class="nav-btn prev-btn" aria-label="Anterior">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 6 10 12 18 18"></polyline></svg>
     </button>
-    <span class="play-text">Assista ao trailer</span>
-    </div>
-    <button id="mute-btn" class="mute-button">🔈</button>
-    <a href="recomendados2.html" class="next-btn" title="Próximo">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="10 6 18 12 10 18"></polyline>
-    </svg>
-</a>
 
-    <div class="episodes-wrapper">
-    <!-- Botão para abrir -->
-<button id="toggle-episodes" class="episodes-btn">☰</button>
+    <button id="nextHero" class="nav-btn next-btn" aria-label="Próximo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="10 6 18 12 10 18"></polyline></svg>
+    </button>
 
-<!-- Menu lateral dentro da seção -->
-<aside id="episodes-panel" class="episodes-panel">
-    <div class="episodes-header">
-        <h2>Episódios</h2>
-        <button id="close-episodes" class="close-btn">✕</button>
-    </div>
+    <button id="mute-btn" class="mute-button" type="button" aria-label="Ativar/desativar som">🔈</button>
+  </section>
 
-    <div class="episodes-list">
-        <div class="episode-item">
-            <img src="imgs/ComandoEp1.webp" alt="Episódio 1">
-            <div class="episode-info">
-                <h3>01 - Embrulho No Estômago</h3>
-                <p>Amanda Waller reúne os Creature Commandos - liderados pelo General Rick Flag Sr.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp2.jpg" alt="Episódio 2">
-            <div class="episode-info">
-                <h3>02 - O Colar de Turmalina</h3>
-                <p>Enquanto Ilana continua sua busca por Flag, A Noiva mostra onde foi criada.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp3.webp" alt="Episódio 3">
-            <div class="episode-info">
-                <h3>03 - Viva o Homem de Lata</h3>
-                <p>GI Robot revive seus dias de glória e finalmente realiza seu sonho.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp4.jpg" alt="Episódio 4">
-            <div class="episode-info">
-                <h3>04 - Caçando Esquilos</h3>
-                <p>O Comando das Criaturas retorna para casa para entender a motivação da Circe, já Weasel.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp5.jpg" alt="Episódio 5">
-            <div class="episode-info">
-                <h3>05 - A Panela de Ferro</h3>
-                <p>Flag e Frankenstein se unem para refutar as visões de Circe sobre a Princesa.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp6.jpg" alt="Episódio 6">
-            <div class="episode-info">
-                <h3>06 - Priyatel Skelet</h3>
-                <p>Dr.Fósforo surge com a sua própria pesquisa; O Comando enfrenta um perigo iminente.</p>
-            </div>
-        </div>
-        <div class="episode-item">
-            <img src="imgs/ComandoEp7.jpg" alt="Episódio 7">
-            <div class="episode-info">
-                <h3>07 - Um Monstrinho muito Engraçado</h3>
-                <p>A Princesa tenta escapar da morte pelas mãos dos Comandos Criaturas, de uma vez por todas.</p>
-            </div>
-        </div>
-    </div>
-</aside>
-</div>
-
-    </section>
     <section class="em-breve" style="--em-breve-bg: url('imgs/SupermanBack.jpg'); --bg-pos: center 40%;">
   <div class="em-breve-inner">
     <!-- Coluna da esquerda -->
@@ -735,7 +679,158 @@
 </div>
 
 </section>
+  <script>
+    // --- Carrossel do HERO (sem trocar de página) ---
+    const slides = [
+      {
+        video: "vds/Creature Commandos   Official Trailer   DC.mp4",
+        link: "pag-commandos.html",
+        titleLogo: "imgs/creature-commandos.png",
+        desc: "Criada por James Gunn. Nesta ousada série animada da DC, uma equipe secreta de monstros encarcerados é o último recurso para missões consideradas perigosas demais para humanos.",
+        ratingText: "18",
+        ratingClass: "rating18",
+        season: "Temporada 1",
+        day: "05",
+        monthYear: "DEZ <br>2024",
+        serviceLogo: "imgs/HBOMax-logo.gif"
+      },
+      {
+        video: "vds/Fallout - Teaser Trailer Prime Video.mp4",
+        link: "pag-fallout.html",
+        titleLogo: "imgs/Fallout_TV_Series.svg",
+        desc: "Criada por Graham Wagner. Duzentos anos após o apocalipse, os habitantes dos luxuosos abrigos radioativos são forçados a retornar ao universo complexo, estranho e altamente violento que os espera na superfície.",
+        ratingText: "18",
+        ratingClass: "rating18",
+        season: "Temporada 1",
+        day: "10",
+        monthYear: "ABR <br>2024",
+        serviceLogo: "imgs/Amazon_Prime_logo.png"
+      },
+      {
+        video: "vds/Alien Earth   Official Trailer   FX.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-alienearth.html",
+        titleLogo: "imgs/alien-earth-logo.png",
+        desc: "Criada por Noah Hawley. Uma misteriosa nave espacial cai na Terra, dando início a uma descoberta fatídica que colocará um grupo de soldados táticos e a jovem Wendy (Sydney Chandler) frente a frente com uma ameaça alienígena devastadora.",
+        ratingText: "18",
+        ratingClass: "rating18",
+        season: "Temporada 1",
+        day: "22",
+        monthYear: "JAN <br>2025",
+        serviceLogo: "imgs/disney-plus-logo.png"
+      },
+      {
+        video: "vds/Yellowjackets   Series Trailer   Paramount+.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-yellowjackets.html",
+        titleLogo: "imgs/Yellowjackets_(TV_series_logo).svg.png",
+        desc: "Criado por Ashley Lyle. Um time de futebol feminino do ensino médio sobrevive a um acidente de avião nas montanhas. Vinte e cinco anos depois, descobrimos que o trauma nunca ficou no passado.",
+        ratingText: "16",
+        ratingClass: "rating16",
+        season: "Temporada 3",
+        day: "14",
+        monthYear: "NOV <br>2021",
+        serviceLogo: "imgs/Paramount_Plus.svg.png"
+      },
+      {
+        video: "vds/THE BATMAN – Main Trailer.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-thebatman.html",
+        titleLogo: "imgs/TheBatman2022Logo.webp",
+        desc: "Criado por Matt Reeves. Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece com a personificação da vingança para a população.",
+        ratingText: "14",
+        ratingClass: "rating16",
+        season: "2h 56min",
+        day: "03",
+        monthYear: "MAR <br>2022",
+        serviceLogo: "imgs/HBOMax-logo.gif"
+      },
+      {
+        video: "vds/A Minecraft Movie   Official Trailer.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-minecraft.html",
+        titleLogo: "imgs/Minecraftmovie.png",
+        desc: "Criado por Jared Hess. Quatro desajustados são subitamente puxados por um portal misterioso ao Mundo Superior: um paraíso bizarro e cúbico que vive na base da imaginação.",
+        ratingText: "10",
+        ratingClass: "rating10",
+        season: "1h 41min",
+        day: "03",
+        monthYear: "ABR <br>2025",
+        serviceLogo: "imgs/HBOMax-logo.gif"
+      },
+      {
+        video: "vds/Marvel Studios’ Thunderbolts    Teaser Trailer   Only In Theaters May 2025.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-thunderbolts.html",
+        titleLogo: "imgs/Thunderbolts.png",
+        desc: "Criada por Jack Schreier. Presos em uma armadilha mortal, uma equipe nada convencional de anti-heróis embarca em uma missão perigosa que os força a confrontar os cantos mais sombrios de suas vidas.",
+        ratingText: "14",
+        ratingClass: "rating12",
+        season: "2h 09min",
+        day: "02",
+        monthYear: "MAI <br>2025",
+        serviceLogo: "imgs/disney-plus-logo.png"
+      },
+      {
+        video: "vds/Final Destination Bloodlines   Official Trailer.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-premonição6.html",
+        titleLogo: "imgs/Premonicao6.webp",
+        desc: "Criada por Zach Lipovsky. Atormentada por um pesadelo violento e recorrente, uma estudante universitária volta para casa em busca da única pessoa que pode ser capaz de quebrar o ciclo de morte e salvar sua família do terrível destino que inevitavelmente os aguarda.",
+        ratingText: "18",
+        ratingClass: "rating18",
+        season: "1h 50min",
+        day: "15",
+        monthYear: "MAI <br>2025",
+        serviceLogo: "imgs/HBOMax-logo.gif"
+      }
+    ];
 
+    const videoEl = document.getElementById('bg-video');
+    const sourceEl = document.getElementById('bg-source');
+    const linkEl = document.getElementById('title-link');
+    const logoEl = document.getElementById('title-logo');
+    const descEl = document.getElementById('hero-desc');
+    const ratingEl = document.getElementById('hero-rating');
+    const seasonEl = document.getElementById('hero-season');
+    const dayEl = document.getElementById('hero-day');
+    const myEl = document.getElementById('hero-monthYear');
+    const svcLogoEl = document.getElementById('service-logo');
+
+    let idx = 0;
+
+    function applySlide(i) {
+      const s = slides[i];
+      // vídeo
+      sourceEl.src = s.video;
+      videoEl.load();
+      videoEl.play().catch(()=>{});
+      // textos/elementos
+      linkEl.href = s.link;
+      logoEl.src = s.titleLogo;
+      descEl.textContent = s.desc;
+      ratingEl.textContent = s.ratingText;
+      ratingEl.className = `rating ${s.ratingClass}`;
+      seasonEl.textContent = s.season;
+      dayEl.textContent = s.day;
+      myEl.innerHTML = s.monthYear;
+      svcLogoEl.src = s.serviceLogo;
+    }
+
+    document.getElementById('nextHero').addEventListener('click', () => {
+      idx = (idx + 1) % slides.length;
+      applySlide(idx);
+    });
+
+    document.getElementById('prevHero').addEventListener('click', () => {
+      idx = (idx - 1 + slides.length) % slides.length;
+      applySlide(idx);
+    });
+
+    // Mute toggle
+    const muteBtn = document.getElementById('mute-btn');
+    muteBtn.addEventListener('click', () => {
+      videoEl.muted = !videoEl.muted;
+      muteBtn.textContent = videoEl.muted ? '🔇' : '🔈';
+    });
+
+    // Inicializa estado (garante consistência)
+    applySlide(idx);
+  </script>
 <script src="script.js"></script>
 
 </body>

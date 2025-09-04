@@ -171,7 +171,7 @@
     <div class="filtro-grid">
       <div class="serie-card" data-generos='["Ação","Comédia"]' style="background-image: url('imgs/bg-series/bg-peacemaker.jpg');"></div>
       <div class="serie-card" data-generos='["Ficção & Fantasia","Ação","Drama"]' style="background-image: url('imgs/bg-series/bg-fallout.jpg');"></div>
-      <div class="serie-card" data-generos='["Ficção & Fantasia","Documentários"]' style="background-image: url('imgs/bg-series/bg-alienearth.jpg');"></div>
+      <div class="serie-card" data-generos='["Ficção & Fantasia","Terror"]' style="background-image: url('imgs/bg-series/bg-alienearth.jpg');"></div>
       <div class="serie-card" data-generos='["Drama","Terror"]' style="background-image: url('imgs/bg-series/bg-yellowjackets.jpg');"></div>
       <div class="serie-card" data-generos='["Animação","Ação","Comédia"]' style="background-image: url('imgs/bg-series/bg-creature-commandos.webp');"></div>
       <div class="serie-card" data-generos='["Ação","Terror","Drama","Ficção & Fantasia"]' style="background-image: url('imgs/bg-series/bg-supernatural.jpg');"></div>
@@ -191,8 +191,8 @@
         link: "pag-commandos.html",
         titleLogo: "imgs/creature-commandos.png",
         desc: "Criada por James Gunn. Nesta ousada série animada da DC, uma equipe secreta de monstros encarcerados é o último recurso para missões consideradas perigosas demais para humanos.",
-        ratingText: "16",
-        ratingClass: "rating16",
+        ratingText: "18",
+        ratingClass: "rating18",
         season: "Temporada 1",
         day: "05",
         monthYear: "DEZ <br>2024",
@@ -202,7 +202,7 @@
         video: "vds/Fallout - Teaser Trailer Prime Video.mp4",
         link: "pag-fallout.html",
         titleLogo: "imgs/Fallout_TV_Series.svg",
-        desc: "Duzentos anos após o apocalipse, os habitantes dos abrigos retornam à superfície — um mundo tão estranho quanto violento.",
+        desc: "Criada por Graham Wagner. Duzentos anos após o apocalipse, os habitantes dos luxuosos abrigos radioativos são forçados a retornar ao universo complexo, estranho e altamente violento que os espera na superfície.",
         ratingText: "18",
         ratingClass: "rating18",
         season: "Temporada 1",
@@ -214,13 +214,25 @@
         video: "vds/Alien Earth   Official Trailer   FX.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
         link: "pag-alienearth.html",
         titleLogo: "imgs/alien-earth-logo.png",
-        desc: "Uma viagem documental pelo planeta sob uma nova ótica: como se fôssemos os alienígenas observando a Terra.",
-        ratingText: "12",
-        ratingClass: "rating12",
+        desc: "Criada por Noah Hawley. Uma misteriosa nave espacial cai na Terra, dando início a uma descoberta fatídica que colocará um grupo de soldados táticos e a jovem Wendy (Sydney Chandler) frente a frente com uma ameaça alienígena devastadora.",
+        ratingText: "18",
+        ratingClass: "rating18",
         season: "Temporada 1",
         day: "22",
         monthYear: "JAN <br>2025",
-        serviceLogo: "imgs/HBOMax-logo.gif"
+        serviceLogo: "imgs/disney-plus-logo.png"
+      },
+      {
+        video: "vds/Yellowjackets   Series Trailer   Paramount+.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
+        link: "pag-yellowjackets.html",
+        titleLogo: "imgs/Yellowjackets_(TV_series_logo).svg.png",
+        desc: "Criado por Ashley Lyle. Um time de futebol feminino do ensino médio sobrevive a um acidente de avião nas montanhas. Vinte e cinco anos depois, descobrimos que o trauma nunca ficou no passado.",
+        ratingText: "16",
+        ratingClass: "rating16",
+        season: "Temporada 3",
+        day: "14",
+        monthYear: "NOV <br>2021",
+        serviceLogo: "imgs/Paramount_Plus.svg.png"
       }
     ];
 
@@ -292,10 +304,11 @@
         const generos = JSON.parse(card.dataset.generos);
 
         if (genero === "all" || generos.includes(genero)) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
+        card.style.display = "flex"; // mantém largura/altura corretas no flexbox
+      } else {
+        card.style.display = "none";
+      }
+
       });
     });
   });

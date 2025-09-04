@@ -306,15 +306,21 @@ body {
   scroll-behavior: smooth;
   overflow-x:auto;
   padding: 1px 0;
+  margin-left: 40px;
+  margin: 0 -1%;
+  scroll-snap-type: x mandatory;
 }
 /* Cards mantêm estilo */
 .filtro-grid .serie-card {
   flex: 0 0 200px; /* largura fixa para rolagem */
-  height: 280px;
+  height: 300px;
+  min-width: 190px;
+  max-width: 170px;
   border-radius: 14px;
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  scroll-snap-align: start;
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .filtro-grid .serie-card:hover {
