@@ -1,0 +1,260 @@
+/* Fundo hero */
+.page-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  color: white;
+  gap: 40px;
+  background-size: cover;          /* garante que a imagem preencha */
+  background-position: center;     /* centraliza a imagem */
+  background-repeat: no-repeat;    /* evita repetição */
+}
+.page-overlay {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: linear-gradient(to right, rgba(0,0,0,0.85) 30%, rgba(0,0,0,0.3));
+  z-index: 1;
+}
+:root{
+    --cor-destaque: #ffdb0e; 
+    --cor-secundaria: #000000;
+    --cor-alternativa: #ffb618;
+}
+
+/* Conteúdo do lado esquerdo */
+.page-content {
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+}
+
+.serie-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #ccc;
+  font-weight: bold; /* se quiser igual o Yellowjackets */
+}
+
+
+.page-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.page-title-logo {
+  max-width: 300px; /* ajusta o tamanho da logo */
+  width: 100%;       /* faz a imagem ser responsiva */
+  height: auto;      /* mantém proporção */
+  margin-bottom: 20px; /* distância da descrição */
+  display: block;    /* remove espaço em linha */
+}
+@media (max-width: 768px) {
+  .page-title-logo {
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}
+
+.page-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.page-meta .age {
+  background:var(--cor-destaque);
+  color: var(--cor-secundaria);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Botões */
+.page-buttons .btn {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.page-buttons .play {
+  background: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
+.page-buttons .play:hover {
+  background: var(--cor-secundaria);
+  color: var(--cor-destaque);
+}
+.page-buttons .list {
+  background: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
+.page-buttons .list:hover {
+  background: var(--cor-secundaria);
+  color: var(--cor-destaque);
+}
+
+/* Lista de episódios */
+.page-episodes {
+  position: relative;
+  z-index: 2;
+  width: 240px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 8px;
+  flex: 0 0 240px;
+}
+
+/* Seletor de temporada */
+.season-selector {
+  display: flex;
+  justify-content: flex-start; /* alinhado à esquerda */
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--cor-secundaria);
+}
+
+.season-selector label {
+  background: var(--cor-secundaria);
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--cor-destaque);
+  letter-spacing: 1px;
+}
+
+.season-selector select {
+  appearance: none;
+  background: var(--cor-destaque);
+  color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  padding: 10px 40px 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover e foco */
+.season-selector select:hover,
+.season-selector select:focus {
+  background: var(--cor-secundaria);
+  color: var(--cor-destaque);
+  border-color: var(--cor-secundaria);
+}
+
+/* Adiciona uma setinha personalizada */
+.season-selector {
+  position: relative;
+}
+.season-selector::after {
+  position: absolute;
+  right: 15px;
+  font-size: 0.8rem;
+  color: var(--cor-destaque);
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+.season-selector select:hover + ::after,
+.season-selector select:focus + ::after {
+  color: #000;
+}
+.season-selector,
+.episodes-container {
+  position: relative;
+  z-index: 2; /* acima do overlay */
+}
+/* Container vertical para seletor + episódios */
+.episodes-section {
+  position: relative;
+  z-index: 2; /* acima do overlay */
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  gap: 10px;
+  margin-top: 20px; /* distância do conteúdo acima (botões, meta) */
+}
+/* Containers de episódios */
+.episodes-container {
+  display: none; /* padrão: escondido */
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.episodes-container.active {
+  display: block;
+  flex-direction: column;
+}
+
+/* Card do episódio */
+.episode-card {
+  position: relative;
+  height: 160px;
+  flex: 0 0 220px;
+  width: 220px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.episode-card:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay com título e tempo */
+.episode-card .overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.episode-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.episode-card .duration {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Scrollbar customizada */
+.episodes-container {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+.episodes-container::-webkit-scrollbar {
+  width: 10px;
+}
+.episodes-container::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.episodes-container::-webkit-scrollbar-thumb {
+  background: var(--cor-destaque);
+  border-radius: 10px;
+  border: 2px solid var(--cor-secundaria);
+}
+.episodes-container::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-alternativa);
+}
+
