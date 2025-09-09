@@ -135,7 +135,7 @@
   appearance: none;
   background: var(--cor-destaque);
   color: var(--cor-secundaria);
-  border: 2px solid var(--cor-secundaria);
+  border: 2px solid var(--cor-alternativa);
   padding: 10px 40px 10px 15px;
   border-radius: 8px;
   font-weight: bold;
@@ -151,7 +151,7 @@
 .season-selector select:focus {
   background: var(--cor-secundaria);
   color: var(--cor-destaque);
-  border-color: var(--cor-secundaria);
+  border-color: var(--cor-alternativa);
 }
 
 /* Adiciona uma setinha personalizada */

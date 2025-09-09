@@ -128,7 +128,7 @@ const conteudos = {
   supernatural: { // novo bloco para série Supernatural
     tipo: "SÉRIE",
     titulo: "Supernatural",
-    descricao: "Criada por Eric Kripke. Dois irmãos caçam criaturas sombrias, espíritos e demônios em uma jornada perigosa que mistura mistério, ação e terror sobrenatural.",
+    descricao: "Criada por Eric Kripke. Dois irmãos caçam criaturas sombrias, espíritos e demônios em uma jornada perigosa que mistura mistério, ação e terror sobrenatural. Acompanhem Sam e Dean Winchester no négocio da família.",
     ano: "2005",
     idade: "14+",
     temporadas: 15,
@@ -166,6 +166,90 @@ const conteudos = {
         { titulo: "01 - Na hora da minha morte", duracao: "45 min", img: "imgs/episodes/SPN-season2.jpg" },
         { titulo: "02 - Todos amam o palhaço", duracao: "49 min", img: "imgs/episodes/SPN-season2.jpg" },
         { titulo: "03 - Sede de Sangue", duracao: "38 min", img: "imgs/episodes/SPN-season2.jpg" },
+      ]
+    }
+  },
+  yellowjackets: { // novo bloco para série Yellowjackets
+    tipo: "SÉRIE",
+    titulo: "Yellowjackets",
+    descricao: "Criada por Ashley Lyle. Um time de futebol feminino do ensino médio sobrevive a um acidente de avião nas montanhas. Vinte e cinco anos depois, descobrimos que o trauma nunca ficou no passado.",
+    ano: "2021",
+    idade: "16+",
+    temporadas: 3,
+    corDestaque: "#ffc919ff",      // amarelado para o destaque
+    corSecundaria: "#000000",    // botões de lista, bordas etc.
+    corAlternativa: "#f1d062ff",    // Alternativa de cor
+    bg: "imgs/wall-series/wall-yellowjackets.jpg",
+    logo: "imgs/logo-series/logo-yellowjackets.png",
+    episodios: {
+      1: [ // Temporada 1
+        { titulo: "01 - Piloto", duracao: "56 min", img: "imgs/episodes/YellowS1E1.jpg" },
+        { titulo: "02 - Fá Sustenido", duracao: "56 min", img: "imgs/episodes/YellowS1E2.jpg" },
+        { titulo: "03 - A Casa de Bonecas", duracao: "57 min", img: "imgs/episodes/YellowS1E3.jpg" },
+        { titulo: "04 - Aguentem firme", duracao: "58 min", img: "imgs/episodes/YellowS1E4.jpg" },
+        { titulo: "05 - Colméia de Sangue", duracao: "58 min", img: "imgs/episodes/YellowS1E5.webp" },
+        { titulo: "06 - Santas", duracao: "58 min", img: "imgs/episodes/YellowS1E6.avif" },
+        { titulo: "07 - Sem bússula", duracao: "57 min", img: "imgs/episodes/YellowS1E7.webp" },
+        { titulo: "08 - O Vôo da Abelha", duracao: "57 min", img: "imgs/episodes/YellowS1E8.jpg" },
+        { titulo: "09 - O baile do fim", duracao: "58 min", img: "imgs/episodes/YellowS1E9.webp" },
+        { titulo: "10 - Sic Transit<br> Gloria Mundi", duracao: "59 min", img: "imgs/episodes/YellowS1E10.webp" },
+      ],
+      2: [ // Temporada 2
+        { titulo: "01 - Amigos, Romanos,<br>Camponeses", duracao: "58 min", img: "imgs/episodes/YellowS2E1.avif" },
+        { titulo: "02 - Complexo Comestível", duracao: "1h00 min", img: "imgs/episodes/YellowS2E2.webp" },
+        { titulo: "03 - Digestivo", duracao: "57 min", img: "imgs/episodes/YellowS2E3.webp" },
+        { titulo: "04 - Feridas Antigas", duracao: "1h00 min", img: "imgs/episodes/YellowS2E4.jpg" },
+        { titulo: "05 - Duas verdades e uma mentira", duracao: "59 min", img: "imgs/episodes/YellowS2E5.avif" },
+        { titulo: "06 - Qui", duracao: "55 min", img: "imgs/episodes/YellowS2E6.webp" },
+        { titulo: "07 - Enterro", duracao: "59 min", img: "imgs/episodes/YellowS2E7.jpg" },
+        { titulo: "08 - Escolha", duracao: "52 min", img: "imgs/episodes/YellowS2E8.webp" },
+        { titulo: "09 - Contação de Histórias", duracao: "1h01 min", img: "imgs/episodes/YellowS2E9.jpg" },
+      ],
+      3: [ // Temporada 3
+        { titulo: "01 - Celebridade", duracao: "59 min", img: "imgs/episodes/YellowS3E1.webp" },
+        { titulo: "02 - Deslocamento", duracao: "58 min", img: "imgs/episodes/YellowS3E2.jpg" },
+        { titulo: "03 - São os Freios", duracao: "54 min", img: "imgs/episodes/YellowS3E3.avif" },
+        { titulo: "04 - 12 garotas furiosas e<br>1 Travis bêbado", duracao: "59 min", img: "imgs/episodes/YellowS3E4.webp" },
+        { titulo: "05 - A Tai fez isso?", duracao: "55 min", img: "imgs/episodes/YellowS3E5.jpg" },
+        { titulo: "06 - Ação de Graças", duracao: "54 min", img: "imgs/episodes/YellowS3E6.jpg" },
+        { titulo: "07 - Coachar", duracao: "54 min", img: "imgs/episodes/YellowS3E7.jpg" },
+        { titulo: "08 - Uma vida normal e chata", duracao: "55 min", img: "imgs/episodes/YellowS3E8.webp" },
+        { titulo: "09 - Como a história termina", duracao: "55 min", img: "imgs/episodes/YellowS3E9.webp" },
+        { titulo: "10 - Círculo completo", duracao: "1h00 min", img: "imgs/episodes/YellowS3E10.webp" },
+      ]
+    }
+  },
+  twistedmetal: { // novo bloco para série Twisted Metal
+    tipo: "SÉRIE",
+    titulo: "Twisted Metal",
+    descricao: "Criada por Rhett Reese. Em um mundo pós-apocalíptico, um motorista habilidoso recebe a missão perigosa de atravessar terras devastadas, enfrentando saqueadores e batalhas insanas em veículos armados.",
+    ano: "2023 - Atual",
+    idade: "16+",
+    temporadas: 2,
+    corDestaque: "#f73434ff",      // amarelado para o destaque
+    corSecundaria: "#fcfcfcd2",    // botões de lista, bordas etc.
+    corAlternativa: "#c94040ff",    // Alternativa de cor
+    bg: "imgs/wall-series/wall-twistedmetal.jpg",
+    logo: "imgs/logo-series/logo-twistedmetal.png",
+    episodios: {
+      1: [ // Temporada 1
+        { titulo: "01 - WLUDRV", duracao: "30 min", img: "imgs/episodes/TwistedMetalS1E1.jpg" },
+        { titulo: "02 - 3RNCRCS", duracao: "29 min", img: "imgs/episodes/TwistedMetalS1E2.jpg" },
+        { titulo: "03 - NTHLAW1", duracao: "31 min", img: "imgs/episodes/TwistedMetalS1E3.jpg" },
+        { titulo: "04 - WHZDARE", duracao: "32 min", img: "imgs/episodes/TwistedMetalS1E4.webp" },
+        { titulo: "05 - CRZSRDS", duracao: "29 min", img: "imgs/episodes/TwistedMetalS1E5.jpg" },
+        { titulo: "06 - DRVTHRU", duracao: "29 min", img: "imgs/episodes/TwistedMetalS1E6.jpg" },
+        { titulo: "07 - NUTH0UZ", duracao: "32 min", img: "imgs/episodes/TwistedMetalS1E7.jpg" },
+        { titulo: "08 - EV3L1N", duracao: "29 min", img: "imgs/episodes/TwistedMetalS1E8.jpg" },
+        { titulo: "09 - R04DK11", duracao: "24 min", img: "imgs/episodes/TwistedMetalS1E9.jpg" },
+        { titulo: "10 - SHNGRLA", duracao: "33 min", img: "imgs/episodes/TwistedMetalS1E10.jpg" },
+      ],
+      2: [ // Temporada 2
+        { titulo: "01 - PRSRPNT", duracao: "38 min", img: "imgs/episodes/TwistedMetalS2E1.jpg" },
+        { titulo: "02 - DOLF4C3", duracao: "32 min", img: "imgs/episodes/TwistedMetalS2E2.webp" },
+        { titulo: "03 - T3STDRV", duracao: "32 min", img: "imgs/episodes/TwistedMetalS2E3.jpg" },
+        { titulo: "04 - LZGTBZY", duracao: "32 min", img: "imgs/episodes/TwistedMetalS2E4.webp" },
+        { titulo: "05 - ONURMRK", duracao: "26 min", img: "imgs/episodes/TwistedMetalS2E5.webp" },
       ]
     }
   },
