@@ -14,26 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       wrapper.classList.remove("active"); // apenas fecha
     });
   }
-
-  // 🎬 Controle do vídeo
-  const video = document.getElementById('bg-video');
-  const muteBtn = document.getElementById('mute-btn');
-
-  if (video) {
-    video.play().catch(err => console.log("Autoplay bloqueado:", err));
-    video.muted = true;
-    video.volume = 0.2;
-    video.addEventListener('canplay', () => {
-      video.play().catch(err => console.log("Autoplay bloqueado:", err));
-    });
-
-    if (muteBtn) {
-      muteBtn.addEventListener('click', () => {
-        video.muted = !video.muted;
-        muteBtn.textContent = video.muted ? '🔇' : '🔈';
-      });
-    }
-  }
 });
 
 // ===== Slides do Em Breve =====
