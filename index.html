@@ -684,7 +684,7 @@
     const slides = [
       {
         video: "vds/Creature Commandos   Official Trailer   DC.mp4",
-        link: "pag-commandos.html",
+        id: "creaturecommandos",
         titleLogo: "imgs/creature-commandos.png",
         desc: "Criada por James Gunn. Nesta ousada série animada da DC, uma equipe secreta de monstros encarcerados é o último recurso para missões consideradas perigosas demais para humanos.",
         ratingText: "18",
@@ -696,7 +696,7 @@
       },
       {
         video: "vds/Fallout - Teaser Trailer Prime Video.mp4",
-        link: "pag-fallout.html",
+        id: "fallout",
         titleLogo: "imgs/Fallout_TV_Series.svg",
         desc: "Criada por Graham Wagner. Duzentos anos após o apocalipse, os habitantes dos luxuosos abrigos radioativos são forçados a retornar ao universo complexo, estranho e altamente violento que os espera na superfície.",
         ratingText: "18",
@@ -708,7 +708,7 @@
       },
       {
         video: "vds/Alien Earth   Official Trailer   FX.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
-        link: "pag-alienearth.html",
+        id: "alienearth",
         titleLogo: "imgs/alien-earth-logo.png",
         desc: "Criada por Noah Hawley. Uma misteriosa nave espacial cai na Terra, dando início a uma descoberta fatídica que colocará um grupo de soldados táticos e a jovem Wendy (Sydney Chandler) frente a frente com uma ameaça alienígena devastadora.",
         ratingText: "18",
@@ -720,7 +720,7 @@
       },
       {
         video: "vds/Yellowjackets   Series Trailer   Paramount+.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
-        link: "pag-yellowjackets.html",
+        id: "yellowjackets",
         titleLogo: "imgs/Yellowjackets_(TV_series_logo).svg.png",
         desc: "Criado por Ashley Lyle. Um time de futebol feminino do ensino médio sobrevive a um acidente de avião nas montanhas. Vinte e cinco anos depois, descobrimos que o trauma nunca ficou no passado.",
         ratingText: "16",
@@ -732,7 +732,7 @@
       },
       {
         video: "vds/THE BATMAN – Main Trailer.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
-        link: "pag-thebatman.html",
+        id: "thebatman",
         titleLogo: "imgs/TheBatman2022Logo.webp",
         desc: "Criado por Matt Reeves. Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece com a personificação da vingança para a população.",
         ratingText: "14",
@@ -744,7 +744,7 @@
       },
       {
         video: "vds/A Minecraft Movie   Official Trailer.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
-        link: "pag-minecraft.html",
+        id: "minecraft",
         titleLogo: "imgs/Minecraftmovie.png",
         desc: "Criado por Jared Hess. Quatro desajustados são subitamente puxados por um portal misterioso ao Mundo Superior: um paraíso bizarro e cúbico que vive na base da imaginação.",
         ratingText: "10",
@@ -756,7 +756,7 @@
       },
       {
         video: "vds/Marvel Studios’ Thunderbolts    Teaser Trailer   Only In Theaters May 2025.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
-        link: "pag-thunderbolts.html",
+        id: "thunderbolts",
         titleLogo: "imgs/Thunderbolts.png",
         desc: "Criada por Jack Schreier. Presos em uma armadilha mortal, uma equipe nada convencional de anti-heróis embarca em uma missão perigosa que os força a confrontar os cantos mais sombrios de suas vidas.",
         ratingText: "14",
@@ -768,7 +768,7 @@
       },
       {
         video: "vds/Final Destination Bloodlines   Official Trailer.mp4",         // se não tiver, deixe a mesma do 1º ou troque por outra
-        link: "pag-premonição6.html",
+        id: "premonição-6",
         titleLogo: "imgs/Premonicao6.webp",
         desc: "Criada por Zach Lipovsky. Atormentada por um pesadelo violento e recorrente, uma estudante universitária volta para casa em busca da única pessoa que pode ser capaz de quebrar o ciclo de morte e salvar sua família do terrível destino que inevitavelmente os aguarda.",
         ratingText: "18",
@@ -801,7 +801,7 @@
       videoEl.play().catch(()=>{});
       videoEl.volume=0.3; //Volume
       // textos/elementos
-      linkEl.href = s.link;
+      linkEl.href = `pagina.html?id=${s.id}`;
       logoEl.src = s.titleLogo;
       descEl.textContent = s.desc;
       ratingEl.textContent = s.ratingText;

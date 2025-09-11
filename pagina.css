@@ -198,43 +198,41 @@
 
 /* Card do episódio */
 .episode-card {
-  position: relative;
-  height: 160px;
-  flex: 0 0 220px;
   width: 220px;
-  margin-bottom: 15px;
-  background-size: cover;
-  background-position: center;
-  background-color: #0f0f0f;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
+  background: #0f0f0f;
+  margin-bottom: 20px;
 }
 .episode-card:hover {
   transform: scale(1.03);
 }
-
-/* Overlay com título e tempo */
-.episode-card .overlay {
-  position: absolute;
-  inset: auto 0 0 0;
-  padding: 16px;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+/* Imagem */
+.episode-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
 }
-.episode-card h3 {
-  margin: 0;
-  font-size: 18px;
-}
-.episode-card .duration {
-  font-size: 14px;
-  opacity: 0.85;
+/* Texto abaixo */
+.episode-info {
+  background: var(--cor-destaque);
+  padding: 8px 10px;
+  color: var(--cor-secundaria);
+  font-weight: bold;
 }
 
+.episode-info h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.episode-info .duration {
+  font-size: 13px;
+  opacity: 0.8;
+}
 /* Scrollbar customizada */
 .episodes-container {
   max-height: 500px;
