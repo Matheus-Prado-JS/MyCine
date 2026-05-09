@@ -1,0 +1,587 @@
+/* =========================
+   FEATURED SHOWCASE
+========================= */
+
+.featured-showcase{
+  position: relative;
+
+  width: 92%;
+  height: 720px;
+
+  margin: 120px auto;
+
+  border-radius: 35px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px;
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(5,5,15,0.96) 15%,
+    rgba(5,5,15,0.70) 45%,
+    rgba(5,5,15,0.35) 70%,
+    rgba(5,5,15,0.15) 100%
+  ),
+
+  url("../imgs/showcases/euphoria-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow:
+  0 30px 80px rgba(0,0,0,0.45);
+
+  isolation: isolate;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.showcase-overlay{
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+  radial-gradient(
+    circle at top left,
+    rgba(111, 0, 255, 0.20),
+    transparent 35%
+  ),
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(0, 119, 255, 0.20),
+    transparent 35%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.15)
+  );
+}
+
+/* =========================
+   PARTÍCULAS / LUZES
+========================= */
+
+.showcase-particles{
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  overflow: hidden;
+}
+
+/* BOLHAS DE LUZ */
+
+.showcase-particles::before,
+.showcase-particles::after{
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  border-radius: 50%;
+
+  filter: blur(90px);
+
+  opacity: 0.45;
+
+  animation: floatingLights 12s ease-in-out infinite;
+}
+
+/* ROXO */
+
+.showcase-particles::before{
+  top: -100px;
+  left: -80px;
+
+  background:
+  rgba(132, 0, 255, 0.45);
+}
+
+/* AZUL */
+
+.showcase-particles::after{
+  bottom: -120px;
+  right: -100px;
+
+  background:
+  rgba(0, 132, 255, 0.40);
+
+  animation-delay: 4s;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes floatingLights{
+
+  0%{
+    transform:
+    translateY(0px)
+    translateX(0px)
+    scale(1);
+  }
+
+  25%{
+    transform:
+    translateY(-20px)
+    translateX(15px)
+    scale(1.05);
+  }
+
+  50%{
+    transform:
+    translateY(10px)
+    translateX(-10px)
+    scale(0.98);
+  }
+
+  75%{
+    transform:
+    translateY(-10px)
+    translateX(8px)
+    scale(1.02);
+  }
+
+  100%{
+    transform:
+    translateY(0px)
+    translateX(0px)
+    scale(1);
+  }
+
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.showcase-content{
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 620px;
+}
+
+/* BADGE */
+
+.showcase-badge{
+  display: inline-flex;
+  align-items: center;
+
+  padding:
+  10px 18px;
+
+  border-radius: 40px;
+
+  margin-bottom: 28px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  border:
+  1px solid rgba(255,255,255,0.10);
+
+  backdrop-filter: blur(12px);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: white;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* TÍTULO */
+
+.showcase-content h1{
+  font-size: 95px;
+  line-height: 0.95;
+
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 28px;
+
+  letter-spacing: -4px;
+
+  text-shadow:
+  0 10px 35px rgba(0,0,0,0.45);
+}
+
+/* DESCRIÇÃO */
+
+.showcase-content p{
+  font-size: 18px;
+  line-height: 1.8;
+
+  color:
+  rgba(255,255,255,0.72);
+
+  margin-bottom: 35px;
+
+  max-width: 560px;
+}
+
+/* META */
+
+.showcase-meta{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 45px;
+
+  flex-wrap: wrap;
+}
+
+.showcase-meta span{
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  color:
+  rgba(255,255,255,0.65);
+}
+
+/* BOTÕES */
+
+.showcase-buttons{
+  display: flex;
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.watch-now{
+  height: 58px;
+
+  padding:
+  0 32px;
+
+  border: none;
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  background:
+  linear-gradient(
+    135deg,
+    #7b2cff,
+    #458cff
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  box-shadow:
+  0 15px 35px rgba(69,140,255,0.35);
+
+  transition:
+  transform 0.35s ease,
+  box-shadow 0.35s ease;
+}
+
+.watch-now:hover{
+  transform:
+  translateY(-4px)
+  scale(1.03);
+
+  box-shadow:
+  0 20px 45px rgba(69,140,255,0.50);
+}
+
+/* BOTÃO SECUNDÁRIO */
+
+.watch-trailer{
+  height: 58px;
+
+  padding:
+  0 28px;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  background:
+  rgba(255,255,255,0.06);
+
+  border:
+  1px solid rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition:
+  transform 0.35s ease,
+  background 0.35s ease,
+  border 0.35s ease;
+}
+
+.watch-trailer:hover{
+  transform:
+  translateY(-4px);
+
+  background:
+  rgba(255,255,255,0.12);
+
+  border:
+  1px solid rgba(255,255,255,0.22);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width: 980px){
+
+  .featured-showcase{
+    height: auto;
+
+    padding:
+    80px 35px;
+  }
+
+  .showcase-content h1{
+    font-size: 65px;
+  }
+
+}
+
+@media(max-width: 680px){
+
+  .featured-showcase{
+    padding:
+    70px 25px;
+
+    border-radius: 25px;
+  }
+
+  .showcase-content h1{
+    font-size: 48px;
+  }
+
+  .showcase-content p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .showcase-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .watch-now,
+  .watch-trailer{
+    width: 100%;
+  }
+
+}
+
+/* =========================
+   SPIDER-MAN NOIR
+========================= */
+
+.noir-showcase{
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(0,0,0,0.96) 15%,
+    rgba(0,0,0,0.82) 45%,
+    rgba(0,0,0,0.45) 75%,
+    rgba(0,0,0,0.20) 100%
+  ),
+
+  url("../imgs/showcases/spider-man-noir-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  border:
+  1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+  0 35px 90px rgba(0,0,0,0.65);
+}
+
+/* OVERLAY */
+
+.noir-showcase .showcase-overlay{
+
+  background:
+
+  radial-gradient(
+    circle at top left,
+    rgba(255,255,255,0.08),
+    transparent 30%
+  ),
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(120,0,0,0.18),
+    transparent 35%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.88),
+    rgba(0,0,0,0.25)
+  );
+}
+
+/* PARTÍCULAS */
+
+.noir-showcase .showcase-particles::before{
+  background:
+  rgba(255,255,255,0.10);
+
+  opacity: 0.18;
+
+  filter: blur(120px);
+}
+
+.noir-showcase .showcase-particles::after{
+  background:
+  rgba(120,0,0,0.20);
+
+  opacity: 0.22;
+
+  filter: blur(120px);
+}
+
+/* BADGE */
+
+.noir-showcase .showcase-badge{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  color:
+  rgba(255,255,255,0.88);
+
+  letter-spacing: 3px;
+}
+
+/* TÍTULO */
+
+.noir-showcase h1{
+
+  color: white;
+
+  text-shadow:
+  0 10px 35px rgba(0,0,0,0.75);
+
+  letter-spacing: -5px;
+}
+
+/* DESCRIÇÃO */
+
+.noir-showcase p{
+
+  color:
+  rgba(255,255,255,0.68);
+}
+
+/* META */
+
+.noir-showcase .showcase-meta span{
+
+  color:
+  rgba(255,255,255,0.50);
+}
+
+/* BOTÃO PRINCIPAL */
+
+.noir-btn{
+
+  background:
+  linear-gradient(
+    135deg,
+    #2a2a2a,
+    #5e0000
+  );
+
+  box-shadow:
+  0 18px 40px rgba(120,0,0,0.30);
+}
+
+.noir-btn:hover{
+
+  box-shadow:
+  0 22px 50px rgba(120,0,0,0.45);
+}
+
+/* BOTÃO TRAILER */
+
+.noir-trailer{
+
+  background:
+  rgba(255,255,255,0.04);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+}
+
+.noir-trailer:hover{
+
+  background:
+  rgba(255,255,255,0.10);
+
+  border:
+  1px solid rgba(255,255,255,0.15);
+}
+
+/* FILTRO CINEMÁTICO */
+
+.noir-showcase::after{
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+  linear-gradient(
+    rgba(255,255,255,0.015),
+    rgba(0,0,0,0.015)
+  );
+
+  mix-blend-mode: soft-light;
+
+  pointer-events: none;
+
+  z-index: 3;
+}

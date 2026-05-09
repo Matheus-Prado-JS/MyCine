@@ -1,0 +1,498 @@
+/* =========================
+   HEROES SECTION
+========================= */
+
+.heroes-section{
+  width: 92%;
+  margin: 120px auto;
+}
+
+/* HEADER */
+
+.heroes-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-bottom: 45px;
+}
+
+.heroes-header h1{
+  font-size: 90px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  color: rgba(255,255,255,0.10);
+
+  -webkit-text-stroke:
+  2px rgba(255,255,255,0.22);
+
+  letter-spacing: -4px;
+}
+
+.heroes-header span{
+  font-size: 28px;
+  font-weight: 500;
+
+  letter-spacing: 5px;
+
+  color: white;
+}
+
+/* =========================
+   HEROES SLIDER
+========================= */
+
+.heroes-slider-wrapper{
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.heroes-slider{
+  display: flex;
+
+  gap: 70px;
+
+  transition:
+  transform 0.7s ease;
+}
+
+/* CARD */
+
+.hero-card{
+  position: relative;
+
+  height: 370px;
+min-width: 260px;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  background: #f5f5f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+  transform 0.45s ease,
+  background 0.45s ease,
+  box-shadow 0.45s ease;
+}
+
+/* IMG */
+
+.hero-card img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center 120%;
+
+  padding: 0;
+
+  z-index: 2;
+
+  transition:
+  transform 0.45s ease,
+  filter 0.45s ease;
+}
+
+/* LIGHT EFFECT */
+
+.hero-card::before{
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+  radial-gradient(
+    circle at top,
+    rgba(255,255,255,0.14),
+    transparent 60%
+  );
+
+  opacity: 0;
+
+  transition:
+  opacity 0.45s ease;
+
+  z-index: 1;
+}
+
+.hero-card:hover::before{
+  opacity: 1;
+}
+
+/* INFO */
+
+.hero-info{
+  position: absolute;
+
+  left: 22px;
+  bottom: 20px;
+
+  z-index: 5;
+
+  opacity: 0;
+
+  transform: translateY(15px);
+
+  transition:
+  opacity 0.35s ease,
+  transform 0.35s ease;
+}
+
+.hero-info h3{
+  font-size: 20px;
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 4px;
+}
+
+.hero-info span{
+  font-size: 13px;
+
+  color:
+  rgba(255,255,255,0.75);
+
+  letter-spacing: 1px;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.hero-card:hover{
+
+  box-shadow:
+  0 18px 40px rgba(0,0,0,0.28),
+  inset 0 0 35px rgba(255,255,255,0.08);
+}
+
+.hero-card:hover img{
+  transform:
+  scale(1.06)
+  translateY(-6px);
+
+  filter:
+  drop-shadow(0 10px 25px rgba(0,0,0,0.35));
+}
+
+.hero-card:hover .hero-info{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   CORES DOS HERÓIS
+========================= */
+
+/* BATMAN */
+
+.batman:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #2b2b2b,
+    #555
+  );
+}
+
+/* SUPERMAN */
+
+.superman:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #0059ff,
+    #00a2ff
+  );
+}
+
+/* SPIDERMAN */
+
+.spiderman:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #c40000,
+    #ff2a2a
+  );
+}
+
+/* MULHER MARAVILHA */
+
+.wonderwoman:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #a30000,
+    #ffcc00
+  );
+}
+
+/* IRON MAN */
+
+.ironman:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #7a0000,
+    #ffae00
+  );
+}
+
+/* CAPITÃO */
+
+.captain:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #0044ff,
+    #ff2a2a
+  );
+}
+
+/* FLASH */
+
+.flash:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #ff0000,
+    #ffd000
+  );
+}
+
+/* HULK */
+
+.hulk:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #008a2e,
+    #5eff00
+  );
+}
+
+/* LANTERNA */
+
+.lantern:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #00a651,
+    #8cff00
+  );
+}
+
+/* THOR */
+
+.thor:hover{
+  background:
+  linear-gradient(
+    135deg,
+    #3f4c6b,
+    #7f8db3
+  );
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 768px){
+
+  .heroes-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .heroes-header h1{
+    font-size: 60px;
+  }
+
+  .heroes-header span{
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .hero-card{
+    height: 260px;
+  }
+
+}
+/* =========================
+   CORES BASE DOS CARDS
+========================= */
+
+/* BATMAN */
+
+.batman{
+  background:
+  linear-gradient(
+    135deg,
+    #2a2a2a,
+    #3b3b3b
+  );
+}
+
+/* SUPERMAN */
+
+.superman{
+  background:
+  linear-gradient(
+    135deg,
+    #0d47c9,
+    #1976ff
+  );
+}
+
+/* SPIDERMAN */
+
+.spiderman{
+  background:
+  linear-gradient(
+    135deg,
+    #a80000,
+    #d81f1f
+  );
+}
+
+/* MULHER MARAVILHA */
+
+.wonderwoman{
+  background:
+  linear-gradient(
+    135deg,
+    #d49a07,
+    #b8860b
+  );
+}
+
+/* IRON MAN */
+
+.ironman{
+  background:
+  linear-gradient(
+    135deg,
+    #6b0000,
+    #990505
+  );
+}
+
+/* CAPITÃO */
+
+.captain{
+  background:
+  linear-gradient(
+    135deg,
+    #0033cc,
+    #9b0000
+  );
+}
+
+/* FLASH */
+
+.flash{
+  background:
+  linear-gradient(
+    135deg,
+    #b30000,
+    #c99a00
+  );
+}
+
+/* HULK */
+
+.hulk{
+  background:
+  linear-gradient(
+    135deg,
+    #006622,
+    #2d8a00
+  );
+}
+
+/* LANTERNA */
+
+.lantern{
+  background:
+  linear-gradient(
+    135deg,
+    #008f45,
+    #4fa800
+  );
+}
+
+/* THOR */
+
+.thor{
+  background:
+  linear-gradient(
+    135deg,
+    #44516f,
+    #5d6d91
+  );
+}
+/* =========================
+   HERO PAGINATION
+========================= */
+
+.heroes-pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 40px;
+}
+
+/* DOT */
+
+.hero-dot{
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  cursor: pointer;
+
+  background:
+  rgba(180,140,255,0.35);
+
+  transition:
+  transform 0.3s ease,
+  background 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+/* ACTIVE */
+
+.hero-dot.active{
+  background:
+  #8b5cff;
+
+  box-shadow:
+  0 0 18px rgba(139,92,255,0.55);
+
+  transform: scale(1.15);
+}
+
+/* HOVER */
+
+.hero-dot:hover{
+  transform: scale(1.12);
+}
