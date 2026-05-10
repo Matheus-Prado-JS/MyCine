@@ -63,7 +63,7 @@
   position: relative;
 
   min-width: 220px;
-  height: 330px;
+  height: 300px;
 
   flex-shrink: 0;
 
@@ -189,7 +189,7 @@
 }
 
 .cine-name{
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
 
   color: white;
@@ -210,6 +210,70 @@
 .top-slider{
   padding-bottom: 90px;
 }
+
+/* =========================
+   CINE SLIDER
+========================= */
+
+.cine-slider-wrapper{
+  width: 1690px;
+
+  overflow: hidden;
+
+  margin-left: 0;
+
+  padding-left: 10px;
+}
+
+.cine-slider{
+  display: flex;
+  gap: 90px;
+
+  transition:
+  transform 0.7s ease;
+}
+
+/* PAGINAÇÃO */
+
+.cine-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+/* DOT */
+
+.cine-dot{
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+
+  background:
+  rgba(255,255,255,0.25);
+
+  transition:
+  transform 0.3s ease,
+  background 0.3s ease;
+}
+
+.cine-dot.active{
+  background: #8b5cff;
+
+  transform: scale(1.15);
+}
+
+.cine-dot:hover{
+  transform: scale(1.1);
+}
+
 
 /* =========================
    BADGE NOVOS EPISÓDIOS
@@ -320,4 +384,16 @@
   box-shadow:
   0 12px 28px rgba(69,140,255,0.40);
 
+}
+
+/* =========================
+   CINE TOP FIX
+========================= */
+
+.cine-slider{
+  gap: 90px !important;
+
+  padding: 15px 0 90px 0 !important;
+
+  overflow: visible;
 }
