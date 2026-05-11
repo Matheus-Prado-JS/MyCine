@@ -587,6 +587,422 @@
 }
 
 /* =========================
+   SUPERGIRL
+========================= */
+
+.supergirl-showcase{
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(6,10,25,0.96) 15%,
+    rgba(12,18,40,0.82) 45%,
+    rgba(20,28,60,0.45) 75%,
+    rgba(20,28,60,0.15) 100%
+  ),
+
+  url("../imgs/showcases/supergirl-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  border:
+  1px solid rgba(255,255,255,0.06);
+
+  box-shadow:
+  0 35px 90px rgba(0,0,0,0.65);
+}
+
+/* OVERLAY */
+
+.supergirl-showcase .showcase-overlay{
+
+  background:
+
+  radial-gradient(
+    circle at top left,
+    rgba(80,140,255,0.22),
+    transparent 35%
+  ),
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(255,70,70,0.20),
+    transparent 35%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.20)
+  );
+}
+
+/* PARTÍCULAS */
+
+.supergirl-showcase .showcase-particles::before{
+
+  background:
+  rgba(80,140,255,0.28);
+
+  opacity: 0.24;
+
+  filter: blur(120px);
+}
+
+.supergirl-showcase .showcase-particles::after{
+
+  background:
+  rgba(255,70,70,0.22);
+
+  opacity: 0.20;
+
+  filter: blur(120px);
+}
+
+/* BADGE */
+
+.supergirl-showcase .showcase-badge{
+
+  background:
+  rgba(255,255,255,0.06);
+
+  border:
+  1px solid rgba(255,255,255,0.10);
+
+  color:
+  rgba(255,255,255,0.92);
+
+  letter-spacing: 3px;
+}
+
+/* TÍTULO */
+
+.supergirl-showcase h1{
+
+  color: white;
+
+  letter-spacing: -5px;
+
+  text-shadow:
+    0 0 12px rgba(80,140,255,0.25),
+    0 0 28px rgba(255,70,70,0.18),
+    0 10px 35px rgba(0,0,0,0.75);
+}
+
+/* DESCRIÇÃO */
+
+.supergirl-showcase p{
+
+  color:
+  rgba(255,255,255,0.72);
+}
+
+/* META */
+
+.supergirl-showcase .showcase-meta span{
+
+  color:
+  rgba(255,255,255,0.55);
+}
+
+/* BOTÃO PRINCIPAL */
+
+.supergirl-btn{
+
+  background:
+  rgba(4, 15, 80, 0.575);
+
+  border:
+  1px solid rgba(4, 15, 80, 0.404);
+
+  color:
+  rgba(255,255,255,0.88);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.28);
+
+  transition:
+  transform 0.35s ease,
+  border 0.35s ease,
+  background 0.35s ease,
+  box-shadow 0.35s ease,
+  color 0.35s ease;
+}
+
+.supergirl-btn:hover{
+
+  transform:
+  translateY(-3px);
+
+  background:
+  rgba(167, 4, 4, 0.301);
+
+  border:
+  1px solid rgba(255,80,80,0.28);
+
+  color:
+  rgba(255,120,120,0.95);
+
+  box-shadow:
+  0 14px 35px rgba(255,40,40,0.12);
+}
+
+/* BOTÃO TRAILER */
+
+.supergirl-trailer{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.10);
+}
+
+.supergirl-trailer:hover{
+
+  background:
+  rgba(255,255,255,0.12);
+
+  border:
+  1px solid rgba(255,255,255,0.18);
+}
+
+/* FILTRO CINEMÁTICO */
+
+.supergirl-showcase::after{
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+  linear-gradient(
+    rgba(255,255,255,0.015),
+    rgba(0,0,0,0.015)
+  );
+
+  mix-blend-mode: soft-light;
+
+  pointer-events: none;
+
+  z-index: 3;
+}
+
+/* =========================
+   RESIDENT EVIL
+========================= */
+
+.re-showcase{
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(5,5,5,0.97) 15%,
+    rgba(10,10,10,0.88) 45%,
+    rgba(20,0,0,0.50) 75%,
+    rgba(20,0,0,0.18) 100%
+  ),
+
+  url("../imgs/showcases/resident-evil-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  border:
+  1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+  0 35px 90px rgba(0,0,0,0.78);
+}
+
+/* OVERLAY */
+
+.re-showcase .showcase-overlay{
+
+  background:
+
+  radial-gradient(
+    circle at top left,
+    rgba(180,0,0,0.22),
+    transparent 35%
+  ),
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(255,255,255,0.05),
+    transparent 30%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.92),
+    rgba(0,0,0,0.25)
+  );
+}
+
+/* PARTÍCULAS */
+
+.re-showcase .showcase-particles::before{
+
+  background:
+  rgba(180,0,0,0.28);
+
+  opacity: 0.22;
+
+  filter: blur(120px);
+}
+
+.re-showcase .showcase-particles::after{
+
+  background:
+  rgba(255,255,255,0.08);
+
+  opacity: 0.12;
+
+  filter: blur(140px);
+}
+
+/* BADGE */
+
+.re-showcase .showcase-badge{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  color:
+  rgba(255,255,255,0.90);
+
+  letter-spacing: 3px;
+}
+
+/* TÍTULO */
+
+.re-showcase h1{
+
+  color: white;
+
+  letter-spacing: -5px;
+
+  text-shadow:
+    0 0 14px rgba(180,0,0,0.28),
+    0 0 30px rgba(255,255,255,0.05),
+    0 10px 35px rgba(0,0,0,0.78);
+}
+
+/* DESCRIÇÃO */
+
+.re-showcase p{
+
+  color:
+  rgba(255,255,255,0.70);
+}
+
+/* META */
+
+.re-showcase .showcase-meta span{
+
+  color:
+  rgba(255,255,255,0.50);
+}
+
+/* BOTÃO PRINCIPAL */
+
+.re-btn{
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(20,20,20,0.95),
+    rgba(65,0,0,0.88)
+  );
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  color:
+  rgba(255,255,255,0.90);
+
+  box-shadow:
+  0 12px 30px rgba(120,0,0,0.22);
+
+  transition:
+  transform 0.35s ease,
+  border 0.35s ease,
+  background 0.35s ease,
+  box-shadow 0.35s ease,
+  color 0.35s ease;
+}
+
+.re-btn:hover{
+
+  transform:
+  translateY(-3px);
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(50,0,0,0.95),
+    rgba(120,0,0,0.88)
+  );
+
+  border:
+  1px solid rgba(255,80,80,0.20);
+
+  color:
+  rgba(255,140,140,0.95);
+
+  box-shadow:
+  0 16px 40px rgba(180,0,0,0.25);
+}
+
+/* BOTÃO TRAILER */
+
+.re-trailer{
+
+  background:
+  rgba(255,255,255,0.04);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+}
+
+.re-trailer:hover{
+
+  background:
+  rgba(255,255,255,0.10);
+
+  border:
+  1px solid rgba(255,255,255,0.16);
+}
+
+/* FILTRO CINEMÁTICO */
+
+.re-showcase::after{
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+  linear-gradient(
+    rgba(255,255,255,0.012),
+    rgba(0,0,0,0.02)
+  );
+
+  mix-blend-mode: soft-light;
+
+  pointer-events: none;
+
+  z-index: 3;
+}
+
+/* =========================
    SHOWCASE DOTS
 ========================= */
 

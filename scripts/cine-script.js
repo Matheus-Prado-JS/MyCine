@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* CONFIG */
 
-    const itemsPerPage = 5;
+    const itemsPerPage = 3;
 
     const itemWidth =
     items[0].offsetWidth;
@@ -73,3 +73,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+

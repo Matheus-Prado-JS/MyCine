@@ -216,13 +216,32 @@
 ========================= */
 
 .cine-slider-wrapper{
-  width: 1690px;
+  width: 100%;
+  max-width: 1690px;
 
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: visible;
 
-  margin-left: 0;
+  margin: 0 auto;
 
   padding-left: 10px;
+  padding-right: 20px;
+
+  box-sizing: border-box;
+
+  scrollbar-width: none;
+}
+
+.cine-slider-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+@media(max-width: 1440px){
+
+  .cine-slider-wrapper{
+    padding-right: 40px;
+  }
+
 }
 
 .cine-slider{
@@ -397,3 +416,4 @@
 
   overflow: visible;
 }
+
