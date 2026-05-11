@@ -1,0 +1,473 @@
+
+/* =========================
+   STAR WARS SHOWCASE
+========================= */
+
+.starwars-showcase{
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(3,3,10,0.96) 15%,
+    rgba(3,3,10,0.78) 45%,
+    rgba(3,3,10,0.40) 75%,
+    rgba(3,3,10,0.15) 100%
+  ),
+
+  url("../imgs/showcases/star-wars-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  border:
+  1px solid rgba(255,255,255,0.06);
+
+  box-shadow:
+  0 35px 90px rgba(0,0,0,0.70);
+}
+
+/* OVERLAY */
+
+.starwars-showcase .showcase-overlay{
+
+  background:
+
+  radial-gradient(
+    circle at top left,
+    rgba(0,132,255,0.22),
+    transparent 35%
+  ),
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(255,35,35,0.22),
+    transparent 35%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.82),
+    rgba(0,0,0,0.20)
+  );
+}
+
+/* PARTÍCULAS */
+
+.starwars-showcase .showcase-particles::before{
+
+  background:
+  rgba(0,132,255,0.30);
+
+  opacity: 0.28;
+
+  filter: blur(120px);
+}
+
+.starwars-showcase .showcase-particles::after{
+
+  background:
+  rgba(255,40,40,0.28);
+
+  opacity: 0.24;
+
+  filter: blur(120px);
+}
+
+/* BADGE */
+
+.starwars-showcase .showcase-badge{
+
+  background:
+  rgba(255,255,255,0.06);
+
+  border:
+  1px solid rgba(255,255,255,0.10);
+
+  color:
+  rgba(255,255,255,0.92);
+
+  letter-spacing: 3px;
+}
+
+/* TÍTULO */
+
+.starwars-showcase h1{
+
+  color: white;
+
+  letter-spacing: -5px;
+
+  text-shadow:
+    0 0 12px rgba(0,132,255,0.25),
+    0 0 25px rgba(255,40,40,0.18),
+    0 10px 35px rgba(0,0,0,0.70);
+}
+
+/* DESCRIÇÃO */
+
+.starwars-showcase p{
+
+  color:
+  rgba(255,255,255,0.72);
+}
+
+/* META */
+
+.starwars-showcase .showcase-meta span{
+
+  color:
+  rgba(255,255,255,0.60);
+}
+
+/* BOTÃO PRINCIPAL */
+.starwars-btn{
+
+  background:
+  rgba(0,132,255,0.06);
+
+  border:
+  1px solid rgba(0,132,255,0.75);
+
+  color:
+  rgba(0,132,255,1);
+
+  box-shadow:
+  0 0 20px rgba(0,132,255,0.18);
+
+  transition:
+  border 0.3s ease,
+  color 0.3s ease,
+  background 0.3s ease,
+  box-shadow 0.3s ease,
+  transform 0.3s ease;
+}
+
+.starwars-btn:hover{
+
+  border:
+  1px solid rgba(255,70,70,0.75);
+
+  color:
+  rgba(255,70,70,1);
+
+  background:
+  rgba(255,70,70,0.06);
+
+  box-shadow:
+  0 0 22px rgba(255,70,70,0.20);
+}
+
+/* BOTÃO TRAILER */
+
+.starwars-trailer{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.10);
+}
+
+.starwars-trailer:hover{
+
+  background:
+  rgba(255,255,255,0.12);
+
+  border:
+  1px solid rgba(255,255,255,0.18);
+}
+
+/* FILTRO CINEMÁTICO */
+
+.starwars-showcase::after{
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+  linear-gradient(
+    rgba(255,255,255,0.015),
+    rgba(0,0,0,0.015)
+  );
+
+  mix-blend-mode: soft-light;
+
+  pointer-events: none;
+
+  z-index: 3;
+}
+
+/* =========================
+   STAR WARS CURSOR
+========================= */
+
+.starwars-showcase{
+  cursor: none;
+}
+
+/* BOLINHA */
+
+.starwars-cursor{
+  position: fixed;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 9999;
+
+  background: white;
+
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.9),
+    0 0 25px rgba(255,255,255,0.8),
+    0 0 45px rgba(0,132,255,0.45);
+
+  transform:
+    translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.05s linear;
+}
+
+/* TODOS ELEMENTOS INTERNOS */
+
+.starwars-showcase *,
+.starwars-showcase button,
+.starwars-showcase a{
+  cursor: none !important;
+}
+
+/* =========================
+   STAR WARS LAYOUT
+========================= */
+
+.starwars-showcase{
+  justify-content: space-between;
+}
+
+/* PAINEL DIREITO */
+
+.starwars-sidepanel{
+  position: relative;
+  transform: translateY(120px);
+
+  z-index: 6;
+
+  width: 520px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+/* BOTÕES */
+
+.starwars-tabs{
+  display: flex;
+  gap: 12px;
+}
+
+/* TAB */
+/* TAB */
+
+.sw-tab{
+  height: 42px;
+
+  padding: 0 20px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+
+  background:
+  rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(10px);
+
+  color:
+  rgba(255,255,255,0.72);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: none;
+
+  transition:
+  border 0.3s ease,
+  color 0.3s ease,
+  background 0.3s ease,
+  box-shadow 0.3s ease,
+  transform 0.3s ease;
+}
+
+/* HOVER */
+
+.sw-tab:hover{
+
+  border:
+  1px solid rgba(255,70,70,0.65);
+
+  color:
+  rgba(255,70,70,1);
+
+  background:
+  rgba(255,70,70,0.06);
+
+  box-shadow:
+  0 0 18px rgba(255,70,70,0.18);
+}
+
+/* ACTIVE */
+
+.sw-tab.active{
+
+  border:
+  1px solid rgba(0,132,255,0.75);
+
+  color:
+  rgba(0,132,255,1);
+
+  background:
+  rgba(0,132,255,0.06);
+
+  box-shadow:
+  0 0 20px rgba(0,132,255,0.22);
+}
+
+/* GRID CAPAS */
+
+.starwars-covers{
+  display: none;
+
+  gap: 16px;
+
+  width: max-content;
+
+  transition:
+  transform 0.6s ease;
+
+  will-change: transform;
+
+  box-sizing: border-box;
+}
+
+.starwars-covers::-webkit-scrollbar{
+  display: none;
+}
+
+/* CARD */
+
+.sw-cover{
+  min-width: 160px;
+  height: 230px;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  cursor: none;
+
+  border:
+  2px solid transparent;
+
+  transition:
+  transform 0.35s ease,
+  border 0.35s ease,
+  box-shadow 0.35s ease;
+}
+
+/* IMG */
+
+.sw-cover img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* HOVER */
+
+.sw-cover:hover{
+
+  border:
+  2px solid rgba(255,255,255,0.45);
+
+  box-shadow:
+  0 0 18px rgba(255,255,255,0.18),
+  0 0 35px rgba(0,132,255,0.20);
+}
+
+/* ACTIVE */
+
+.sw-cover.active{
+
+  border:
+  2px solid rgba(255,255,255,0.85);
+
+  box-shadow:
+  0 0 25px rgba(255,255,255,0.25),
+  0 0 45px rgba(0,132,255,0.25);
+}
+
+/* =========================
+   WRAPPER CATEGORIAS
+========================= */
+
+/* CATEGORIA */
+
+.starwars-covers{
+  display: none;
+
+  gap: 16px;
+
+  transition:
+  transform 0.6s ease;
+
+  will-change: transform;
+
+  box-sizing: border-box;
+}
+
+/* ACTIVE */
+
+.starwars-covers.active{
+  display: flex;
+}
+/* WRAPPER */
+
+.starwars-covers-wrapper{
+  overflow: hidden;
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.sw-cover{
+  box-sizing: border-box;
+}
+/* NOME DA CAPA */
+
+.sw-cover span{
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color:
+  rgba(255,255,255,0.72);
+
+  text-align: center;
+}

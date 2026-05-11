@@ -585,3 +585,47 @@
 
   z-index: 3;
 }
+
+/* =========================
+   SHOWCASE DOTS
+========================= */
+
+.showcase-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+/* DOT */
+
+.showcase-dot{
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: none;
+
+  background:
+  rgba(255,255,255,0.22);
+
+  transition:
+  transform 0.3s ease,
+  background 0.3s ease;
+}
+
+/* ACTIVE */
+
+.showcase-dot.active{
+  background: white;
+
+  transform: scale(1.15);
+
+  box-shadow:
+  0 0 12px rgba(255,255,255,0.45);
+}
