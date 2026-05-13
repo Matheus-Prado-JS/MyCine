@@ -1232,7 +1232,219 @@ filter: blur(100px);
 
   z-index: 3;
 }
+/* =========================
+   JOGOS VORAZES
+========================= */
 
+.hungergames-showcase{
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(18,12,18,0.96) 12%,
+    rgba(28,18,28,0.82) 42%,
+    rgba(60,32,52,0.38) 75%,
+    rgba(80,45,65,0.12) 100%
+  ),
+
+  url("../imgs/showcases/hunger-games-bg.webp");
+
+  background-size: cover;
+  background-position: center 15%;
+
+  border:
+  1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+  0 35px 90px rgba(0,0,0,0.76);
+
+  overflow: hidden;
+}
+
+/* OVERLAY */
+
+.hungergames-showcase .showcase-overlay{
+
+  background:
+
+  radial-gradient(
+    circle at top left,
+    rgba(255,170,210,0.16),
+    transparent 35%
+  ),
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(255,220,230,0.06),
+    transparent 30%
+  ),
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.90),
+    rgba(0,0,0,0.18)
+  );
+}
+
+/* PARTÍCULAS */
+
+.hungergames-showcase .showcase-particles::before{
+
+  background:
+  rgba(255,170,210,0.20);
+
+  opacity: 0.18;
+
+  filter: blur(130px);
+}
+
+.hungergames-showcase .showcase-particles::after{
+
+  background:
+  rgba(255,240,245,0.08);
+
+  opacity: 0.10;
+
+  filter: blur(150px);
+}
+
+/* BADGE */
+
+.hungergames-showcase .showcase-badge{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  color:
+  rgba(255,245,248,0.90);
+
+  letter-spacing: 3px;
+}
+
+/* TÍTULO */
+
+.hungergames-showcase h1{
+
+  color: white;
+
+  letter-spacing: -5px;
+
+  text-shadow:
+    0 0 16px rgba(255,170,210,0.22),
+    0 0 35px rgba(255,255,255,0.04),
+    0 10px 40px rgba(0,0,0,0.78);
+}
+
+/* DESCRIÇÃO */
+
+.hungergames-showcase p{
+
+  color:
+  rgba(255,255,255,0.74);
+}
+
+/* META */
+
+.hungergames-showcase .showcase-meta span{
+
+  color:
+  rgba(255,255,255,0.52);
+}
+
+/* BOTÃO PRINCIPAL */
+
+.hg-btn{
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(45,25,38,0.96),
+    rgba(120,70,95,0.82)
+  );
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  color:
+  rgba(255,255,255,0.92);
+
+  box-shadow:
+  0 12px 32px rgba(120,70,95,0.22);
+
+  transition:
+  transform 0.35s ease,
+  border 0.35s ease,
+  background 0.35s ease,
+  box-shadow 0.35s ease,
+  color 0.35s ease;
+}
+
+.hg-btn:hover{
+
+  transform:
+  translateY(-3px);
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(80,45,65,0.96),
+    rgba(180,105,145,0.88)
+  );
+
+  border:
+  1px solid rgba(255,210,225,0.18);
+
+  color:
+  rgba(255,240,245,0.96);
+
+  box-shadow:
+  0 16px 42px rgba(180,105,145,0.24);
+}
+
+/* BOTÃO TRAILER */
+
+.hg-trailer{
+
+  background:
+  rgba(255,255,255,0.04);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+}
+
+.hg-trailer:hover{
+
+  background:
+  rgba(255,255,255,0.10);
+
+  border:
+  1px solid rgba(255,255,255,0.16);
+}
+
+/* FILTRO CINEMÁTICO */
+
+.hungergames-showcase::after{
+
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+  linear-gradient(
+    rgba(255,255,255,0.012),
+    rgba(0,0,0,0.020)
+  );
+
+  mix-blend-mode: soft-light;
+
+  pointer-events: none;
+
+  z-index: 3;
+}
 /* =========================
    SHOWCASE DOTS
 ========================= */

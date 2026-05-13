@@ -546,3 +546,376 @@ body{
   }
 
 }
+
+/* =========================
+   EXPLORE POR GÊNERO
+========================= */
+
+.genre-explore{
+
+  padding:
+  110px 8%;
+
+  position: relative;
+}
+
+.genre-explore-header{
+
+  margin-bottom: 45px;
+}
+
+.genre-explore-header h2{
+
+  font-size: 3.2rem;
+
+  color: white;
+
+  letter-spacing: -3px;
+
+  margin-bottom: 12px;
+}
+
+.genre-explore-header p{
+
+  color:
+  rgba(255,255,255,0.55);
+
+  font-size: 1rem;
+
+  max-width: 600px;
+
+  line-height: 1.7;
+}
+
+/* GRID */
+
+.genre-grid{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+/* BOTÃO BASE */
+
+.genre-card{
+
+  position: relative;
+
+  padding:
+  18px 28px;
+
+  border-radius: 18px;
+
+  backdrop-filter: blur(12px);
+
+  background:
+  rgba(255,255,255,0.025);
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition:
+  transform 0.35s ease,
+  border 0.35s ease,
+  background 0.35s ease,
+  box-shadow 0.35s ease;
+}
+
+.genre-card span{
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+.genre-card:hover{
+
+  transform:
+  translateY(-4px);
+}
+
+/* =========================
+   GÊNEROS
+========================= */
+
+/* ESTADO PADRÃO */
+
+.genre-horror,
+.genre-action,
+.genre-scifi,
+.genre-drama,
+.genre-thriller,
+.genre-fantasy,
+.genre-comedy,
+.genre-dystopia{
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 0 25px rgba(255,255,255,0.03);
+}
+
+.genre-horror span,
+.genre-action span,
+.genre-scifi span,
+.genre-drama span,
+.genre-thriller span,
+.genre-fantasy span,
+.genre-comedy span,
+.genre-dystopia span{
+
+  color:
+  rgba(255,255,255,0.72);
+}
+
+/* =========================
+   HOVERS INDIVIDUAIS
+========================= */
+
+/* TERROR */
+
+.genre-horror:hover{
+
+  background:
+  rgba(255,70,70,0.08);
+
+  border:
+  1px solid rgba(255,70,70,0.22);
+
+  box-shadow:
+  0 0 35px rgba(255,70,70,0.18);
+}
+
+.genre-horror:hover span{
+
+  color:
+  rgba(255,120,120,0.92);
+}
+
+/* AÇÃO */
+
+.genre-action:hover{
+
+  background:
+  rgba(255,170,60,0.08);
+
+  border:
+  1px solid rgba(255,170,60,0.22);
+
+  box-shadow:
+  0 0 35px rgba(255,170,60,0.18);
+}
+
+.genre-action:hover span{
+
+  color:
+  rgba(255,190,120,0.92);
+}
+
+/* SCI-FI */
+
+.genre-scifi:hover{
+
+  background:
+  rgba(80,170,255,0.08);
+
+  border:
+  1px solid rgba(80,170,255,0.22);
+
+  box-shadow:
+  0 0 35px rgba(80,170,255,0.18);
+}
+
+.genre-scifi:hover span{
+
+  color:
+  rgba(120,200,255,0.92);
+}
+
+/* DRAMA */
+
+.genre-drama:hover{
+
+  background:
+  rgba(180,140,255,0.08);
+
+  border:
+  1px solid rgba(180,140,255,0.22);
+
+  box-shadow:
+  0 0 35px rgba(180,140,255,0.18);
+}
+
+.genre-drama:hover span{
+
+  color:
+  rgba(210,190,255,0.92);
+}
+
+/* SUSPENSE */
+
+.genre-thriller:hover{
+
+  background:
+  rgba(140,255,180,0.08);
+
+  border:
+  1px solid rgba(140,255,180,0.20);
+
+  box-shadow:
+  0 0 35px rgba(140,255,180,0.16);
+}
+
+.genre-thriller:hover span{
+
+  color:
+  rgba(180,255,210,0.90);
+}
+
+/* FANTASIA */
+
+.genre-fantasy:hover{
+
+  background:
+  rgba(255,120,220,0.08);
+
+  border:
+  1px solid rgba(255,120,220,0.20);
+
+  box-shadow:
+  0 0 35px rgba(255,120,220,0.16);
+}
+
+.genre-fantasy:hover span{
+
+  color:
+  rgba(255,180,235,0.92);
+}
+
+/* COMÉDIA */
+
+.genre-comedy:hover{
+
+  background:
+  rgba(255,225,90,0.08);
+
+  border:
+  1px solid rgba(255,225,90,0.20);
+
+  box-shadow:
+  0 0 35px rgba(255,225,90,0.16);
+}
+
+.genre-comedy:hover span{
+
+  color:
+  rgba(255,235,140,0.92);
+}
+
+/* DISTÓPICOS */
+
+.genre-dystopia:hover{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.14);
+
+  box-shadow:
+  0 0 35px rgba(255,255,255,0.10);
+}
+
+.genre-dystopia:hover span{
+
+  color:
+  rgba(210,210,210,0.90);
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta{
+
+  position: relative;
+
+  padding:
+  120px 8%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+/* FUNDO SUAVE */
+
+.final-cta::before{
+
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+
+  radial-gradient(
+    circle at center,
+    rgba(255,255,255,0.04),
+    transparent 60%
+  );
+
+  pointer-events: none;
+}
+
+/* CONTEÚDO */
+
+.final-cta-content{
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+}
+
+.final-cta-content h2{
+
+  font-size: clamp(2.8rem, 5vw, 5rem);
+
+  color: white;
+
+  letter-spacing: -4px;
+
+  line-height: 1.05;
+
+  margin-bottom: 22px;
+
+  text-shadow:
+  0 10px 35px rgba(0,0,0,0.55);
+}
+
+.final-cta-content p{
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+
+  color:
+  rgba(255,255,255,0.58);
+
+  max-width: 680px;
+
+  margin: 0 auto;
+}
