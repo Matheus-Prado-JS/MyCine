@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>MyCine • Filmes</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/loading.css" />
+  <link rel="stylesheet" href="../styles/cine-top.css" />
+  <link rel="stylesheet" href="../styles/showcase.css" />
+  <link rel="stylesheet" href="../styles/sw-showcase.css" />
+  <link rel="stylesheet" href="../styles/hero-cards.css" />
+  <link rel="stylesheet" href="../styles/movies.css" />
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+
+  <div id="loading-screen">
+
+    <div class="loading-content">
+
+      <h1 class="loading-logo">
+        MYCINE
+      </h1>
+
+      <p class="loading-text">
+        Carregando filmes...
+      </p>
+
+      <div class="loading-bar">
+
+        <div class="loading-progress"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Background -->
+
+  <div class="background-overlay"></div>
+
+  <!-- Header -->
+
+  <header class="header">
+
+    <div class="logo">
+      MyCine
+    </div>
+
+    <nav class="nav">
+
+      <a href="../index.html">Início</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="../series.html">Séries</a>
+      <a href="#">Minha Lista</a>
+
+    </nav>
+
+    <div class="profile">
+      <img src="https://i.imgur.com/2DhmtJ4.png" alt="Perfil">
+    </div>
+
+  </header>
+
+  <!-- FILMES -->
+
+  <section class="top-section">
+
+    <div class="top-header">
+
+      <h1>
+        FILMES
+      </h1>
+
+      <span>
+        TODOS OS <br>
+        FILMES
+      </span>
+
+    </div>
+
+<div id="moviesContainer"></div>
+
+    <div class="cine-pagination"></div>
+
+  </section>
+
+  <!-- SCRIPT -->
+
+  <script src="../scripts/loading.js"></script>
+  <script src="../scripts/movies.js"></script>
+
+</body>
+</html>
